@@ -1,6 +1,10 @@
 import { certificates } from '../data';
+import { heroImages } from '../data';
 
 export default function Profile() {
+
+  const profileImage = heroImages[0];
+
   return (
     <section
       id="profile"
@@ -11,7 +15,7 @@ export default function Profile() {
         {/* === PROFIL PERUSAHAAN === */}
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <img
-            src="../../public/images/hero/hero-1.webp"
+            src={profileImage.src}
             className="rounded-2xl shadow-lg"
             alt="Profil Ayam Geprek Mas Jambang"
           />
@@ -92,7 +96,7 @@ export default function Profile() {
                 </div>
             </div>
             <img
-                src="../../public/images/hero/hero-1.webp"
+                src={profileImage.src}
                 className="rounded-2xl shadow-lg"
                 alt="Profil Ayam Geprek Mas Jambang"
             />

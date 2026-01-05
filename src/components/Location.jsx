@@ -1,9 +1,9 @@
 export default function Location() {
   return (
-    <section id="lokasi" className="container mx-auto px-8 py-20 bg-primary">
+    <section id="lokasi" className="px-8 py-20 bg-primary">
 
       {/* location */}
-        <div className="mx-auto px-6 md:px-12">
+        <div className="px-6 md:px-12">
             <div className="text-center mb-16">
                 <div
                     className="inline-flex items-center px-4 py-2 bg-white/20 border border-secondary/35 text-secondary rounded-full text-sm font-semibold mb-4">

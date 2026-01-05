@@ -21,7 +21,7 @@ export default function CTA() {
                   Siap Bergabung?
               </h2>
               <p className="text-sm md:text-md lg:text-lg  text-white mb-8 max-w-2xl mx-auto">
-                  Jangan tunggu lagi! Pesan motor impian Anda sekarang juga dan rasakan pengalaman berkendara terbaik di
+                  Tunggu Apa Lagi? Segera Miliki Bisnis Ayam Geprek Anda Sendiri dengan Sistem Franchise Terbukti dari Mas Jampang!
               </p>
 
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center">

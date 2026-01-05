@@ -40,7 +40,7 @@ function Hero() {
   }, []);
 
   return (
-      <section id='home' className="container mx-auto px-8 hero grid md:grid-cols-2 py-10 gap-12 items-center grid-cols-1 relative min-h-[80vh]">
+      <section id='beranda' className="container mx-auto px-8 hero grid md:grid-cols-2 pb-10 pt-24 gap-12 items-center grid-cols-1 relative min-h-[80vh]">
         {/* IMAGE SLIDER */}
         <div className="relative w-full h-[420px] overflow-hidden rounded-2xl">
           <div
@@ -85,7 +85,7 @@ function Hero() {
         <div className="max-w-screen-md animate__animated animate__fadeInUp animate__delay-2s">
             <h2 className="mb-4 text-3xl md:text-4xl lg:text-6xl tracking-tight font-extrabold text-gray-700">Bangun Usaha Ayam Geprek Bersama Kami.</h2>
             <p className="mb-8 font-light text-gray-700 text-sm md:text-md lg:text-lg">
-              Franchise Ayam Greprek <span className="text-primary font-medium">Sederhana Mas Jamblang</span> menghadirkan peluang usaha ayam geprek dengan sistem sederhana, rasa konsisten, dan support penuh untuk mitra.
+              Franchise Ayam Greprek <span className="text-primary font-medium">Sederhana Mas Jampang</span> menghadirkan peluang usaha ayam geprek dengan sistem sederhana, rasa konsisten, dan support penuh untuk mitra.
             </p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-secondary rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">

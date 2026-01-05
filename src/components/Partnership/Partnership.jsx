@@ -1,6 +1,6 @@
 export default function Partnership() {
   return (
-    <section id="partnership" className="container mx-auto px-8 py-20 my-20">
+    <section id="kemitraan" className="container mx-auto px-8 py-20 my-20">
       <div className="grid md:grid-cols-2 gap-14 items-start">
         {/* LEFT */}
         <div>

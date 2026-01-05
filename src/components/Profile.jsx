@@ -7,7 +7,7 @@ export default function Profile() {
 
   return (
     <section
-      id="profile"
+      id="profil"
       className="bg-secondary/5 py-28"
     >
       <div className="container mx-auto px-8 space-y-28">
@@ -17,7 +17,7 @@ export default function Profile() {
           <img
             src={profileImage.src}
             className="rounded-2xl shadow-lg"
-            alt="Profil Ayam Geprek Mas Jambang"
+            alt="Profil Ayam Geprek Mas Jampang"
           />
 
           <div>
@@ -26,14 +26,14 @@ export default function Profile() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Ayam Geprek Sederhana Mas Jambang</strong> Ayam Geprek Sederhana Mas Jambang adalah brand kuliner 
+              <strong>Ayam Geprek Sederhana Mas Jampang</strong> Ayam Geprek Sederhana Mas Jampang adalah brand kuliner 
               lokal yang lahir dari semangat menghadirkan makanan lezat, praktis, dan 
               terjangkau bagi masyarakat Indonesia. Dengan mengusung konsep ayam geprek yang 
               sederhana namun kaya rasa, kami berkomitmen untuk selalu menjaga kualitas 
               bahan baku, konsistensi cita rasa, serta standar pelayanan di setiap gerai.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-                Sejak awal berdiri, Ayam Geprek Sederhana Mas Jambang dikembangkan 
+                Sejak awal berdiri, Ayam Geprek Sederhana Mas Jampang dikembangkan 
                 dengan sistem operasional yang mudah dijalankan, bahkan oleh pelaku 
                 usaha pemula. Mulai dari proses pengolahan, penyajian, hingga manajemen operasional, 
                 seluruh sistem telah dirancang agar efisien, terukur, dan dapat direplikasi 
@@ -42,7 +42,7 @@ export default function Profile() {
             <p className="text-gray-600 leading-relaxed mb-4">
                 Kami percaya bahwa kesuksesan sebuah brand tidak hanya diukur 
                 dari jumlah gerai, tetapi juga dari keberhasilan para mitra yang tumbuh 
-                bersama kami. Oleh karena itu, Ayam Geprek Sederhana Mas Jambang 
+                bersama kami. Oleh karena itu, Ayam Geprek Sederhana Mas Jampang 
                 hadir sebagai solusi franchise yang tidak hanya menawarkan produk, 
                 tetapi juga pendampingan bisnis, pelatihan, dan dukungan berkelanjutan.
             </p>
@@ -50,7 +50,7 @@ export default function Profile() {
             <p className="text-gray-600 leading-relaxed">
               Dengan margin usaha yang kompetitif, permintaan pasar yang stabil, 
               serta brand yang terus berkembang, Ayam Geprek Sederhana 
-              Mas Jambang menjadi pilihan tepat bagi Anda yang ingin memulai 
+              Mas Jampang menjadi pilihan tepat bagi Anda yang ingin memulai 
               atau mengembangkan bisnis kuliner dengan risiko yang lebih terkontrol.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Profile() {
 
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                     <p>
-                    Perjalanan Ayam Geprek Sederhana Mas Jambang dimulai dari sebuah 
+                    Perjalanan Ayam Geprek Sederhana Mas Jampang dimulai dari sebuah 
                     gerai kecil yang berfokus pada satu tujuan sederhana: menyajikan ayam 
                     geprek dengan rasa yang konsisten dan harga yang ramah di kantong. Berbekal 
                     resep yang terus disempurnakan serta sambal khas yang menjadi ciri 
@@ -75,7 +75,7 @@ export default function Profile() {
                     Seiring berjalannya waktu, permintaan yang terus meningkat mendorong kami untuk 
                     memperbaiki sistem kerja, menyusun standar operasional, serta memastikan 
                     kualitas produk tetap terjaga meskipun jumlah pesanan semakin bertambah. Dari 
-                    sinilah fondasi bisnis Ayam Geprek Sederhana Mas Jambang mulai 
+                    sinilah fondasi bisnis Ayam Geprek Sederhana Mas Jampang mulai 
                     terbentuk secara lebih profesional.
                     </p>
                     <p>
@@ -86,7 +86,7 @@ export default function Profile() {
                     menjalankan usaha dengan percaya diri.
                     </p>
                     <p>
-                    Hingga saat ini, Ayam Geprek Sederhana Mas Jambang terus 
+                    Hingga saat ini, Ayam Geprek Sederhana Mas Jampang terus 
                     berkembang dan dipercaya oleh mitra di berbagai daerah. Kami senantiasa 
                     melakukan inovasi, baik dari sisi menu, pelayanan, maupun 
                     sistem bisnis, demi memastikan bahwa brand ini dapat 
@@ -98,7 +98,7 @@ export default function Profile() {
             <img
                 src={profileImage.src}
                 className="rounded-2xl shadow-lg"
-                alt="Profil Ayam Geprek Mas Jambang"
+                alt="Profil Ayam Geprek Mas Jampang"
             />
         </div>
 
@@ -108,7 +108,7 @@ export default function Profile() {
             Sertifikat & Pencapaian
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {certificates.map((i) => (
               <div
                 key={i}

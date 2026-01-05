@@ -1,6 +1,6 @@
 export default function Location() {
   return (
-    <section id="location" className="container mx-auto px-8 py-20 bg-primary">
+    <section id="lokasi" className="container mx-auto px-8 py-20 bg-primary">
 
       {/* location */}
         <div className="mx-auto px-6 md:px-12">
@@ -35,10 +35,10 @@ export default function Location() {
                         </div>
                         <div>
                             <h3 className="text-2xl font-bold text-secondary mb-2">
-                                Ayam Geprek Sederhana Mas Jambang
+                                Ayam Geprek Sederhana Mas Jampang
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Jl. Raya Jambang No.123, Kec. Ciledug, Kota Tangerang, Banten 15157
+                                Jl. Raya Jampang No.123, Kec. Ciledug, Kota Tangerang, Banten 15157
                             </p>
                         </div>
                     </div>

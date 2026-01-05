@@ -19,11 +19,11 @@ export default function Footer() {
                           </svg>
                       </div> */}
                       <div>
-                          <div className="text-2xl font-bold text-secondary">Ayam Geprek Sederhana Mas Jambang</div>
+                          <div className="text-2xl font-bold text-secondary">Ayam Geprek Sederhana Mas Jampang</div>
                       </div>
                   </div>
                   <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-                      Franchise Ayam Greprek Sederhana Mas Jamblang yang menghadirkan peluang usaha ayam geprek dengan sistem sederhana, rasa konsisten, dan support penuh untuk mitra.
+                      Franchise Ayam Greprek Sederhana Mas Jampang yang menghadirkan peluang usaha ayam geprek dengan sistem sederhana, rasa konsisten, dan support penuh untuk mitra.
                   </p>
                   
                   <div className="flex space-x-4">
@@ -64,7 +64,7 @@ export default function Footer() {
                   <h4 className="text-lg font-bold text-secondary mb-4">Menu Cepat</h4>
                   <ul className="space-y-3">
                       <li>
-                          <a href="#home"
+                          <a href="#beranda"
                               className="text-gray-300 hover:text-secondary transition-colors flex items-center group">
                               <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
                                   stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@ export default function Footer() {
                           </a>
                       </li>
                       <li>
-                          <a href="#profile"
+                          <a href="#profil"
                               className="text-gray-300 hover:text-secondary transition-colors flex items-center group">
                               <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
                                   stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export default function Footer() {
                           </a>
                       </li>
                       <li>
-                          <a href="#partnership"
+                          <a href="#kemitraan"
                               className="text-gray-300 hover:text-secondary transition-colors flex items-center group">
                               <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
                                   stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@ export default function Footer() {
                           </a>
                       </li>
                       <li>
-                          <a href="#testimonial"
+                          <a href="#testimoni"
                               className="text-gray-300 hover:text-secondary transition-colors flex items-center group">
                               <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
                                   stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function Footer() {
                           </a>
                       </li>
                       <li>
-                          <a href="#location"
+                          <a href="#lokasi"
                               className="text-gray-300 hover:text-secondary transition-colors flex items-center group">
                               <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
                                   stroke="currentColor" viewBox="0 0 24 24">
@@ -208,7 +208,7 @@ export default function Footer() {
           <div className="border-t border-secondary/50 pt-8 text-center">
               <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                   <div className="text-gray-300 text-sm">
-                      © 2025 Ayam Geprek Sederhana Mas Jambang. Semua hak dilindungi undang-undang.
+                      © 2025 Ayam Geprek Sederhana Mas Jampang. Semua hak dilindungi undang-undang.
                   </div>
                   <div className="flex items-center space-x-6 text-sm text-gray-300">
                       <a href="#" className="hover:text-secondary transition-colors">Syarat & Ketentuan</a>

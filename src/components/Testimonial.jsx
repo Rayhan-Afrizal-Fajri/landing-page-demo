@@ -43,7 +43,7 @@ export default function Testimonial() {
   const visible = getVisible();
 
   return (
-    <section id="testimonial" className="py-20 overflow-hidden">
+    <section id="testimoni" className="py-20 overflow-hidden">
       <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-14">
         Apa Kata <span className="text-primary">Mitra Kami</span>
       </h2>

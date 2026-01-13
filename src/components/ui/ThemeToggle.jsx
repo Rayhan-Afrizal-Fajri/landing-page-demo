@@ -20,7 +20,6 @@ export default function ThemeToggle({ theme, setTheme }) {
         rounded-full 
         peer-focus:outline-none 
         peer-focus:ring-4 
-        peer-focus:ring-primary
         peer-checked:bg-secondary
         after:content-[''] 
         after:absolute 

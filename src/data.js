@@ -67,33 +67,45 @@ export const benefits = [
 export const testimonials = [
   {
     name: "Budi",
-    quote: "Balik modal cepat & support mantap!",
+    quote: "Saya sangat puas bergabung dengan franchise Ayam Geprek Mas Jampang. Dari awal pendaftaran sampai buka outlet, semuanya dibimbing dengan jelas. Rasa ayamnya konsisten dan disukai banyak pelanggan. Penjualannya cepat berkembang.",
     rating: 5,
+    src: HeroImage1,
+    alt: 'Hero Image 1',
   },
   {
     name: "Rina",
-    quote: "Brand kuat, penjualan stabil. lorem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    quote: "Franchise Ayam Geprek Mas Jampang sangat cocok untuk pemula seperti saya. Sistemnya rapi dan bahan baku mudah didapat. Tim pusat juga responsif saat saya butuh bantuan. Alhamdulillah, usaha berjalan lancar.",
     rating: 4,
+    src: HeroImage2,
+    alt: 'Hero Image 2',
   },
   {
     name: "Steven",
-    quote: "Brand kuat, penjualan stabil. lorem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    quote: "Awalnya ragu, tapi setelah bergabung hasilnya melebihi ekspektasi. Brand Ayam Geprek Mas Jampang sudah dikenal, jadi promosi lebih mudah. Rasa sambalnya khas dan bikin pelanggan balik lagi. Sangat direkomendasikan.",
     rating: 4,
+    src: HeroImage3,
+    alt: 'Hero Image 3',
   },
   {
     name: "Fardan",
-    quote: "Brand kuat, penjualan stabil. lorem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    quote: "Saya memilih Ayam Geprek Mas Jampang karena modalnya terjangkau. SOP jelas dan pelatihannya mudah dipahami. Dalam waktu singkat, outlet saya sudah punya pelanggan tetap. Usaha ini sangat menjanjikan.",
     rating: 4,
+    src: HeroImage4,
+    alt: 'Hero Image 4',
   },
   {
     name: "Gina",
-    quote: "Brand kuat, penjualan stabil. lorem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    quote: "Bergabung dengan franchise ini adalah keputusan tepat. Dukungan manajemen sangat membantu operasional harian. Menu sederhana tapi laris manis. Omzetnya stabil dan terus meningkat.",
     rating: 4,
+    src: HeroImage5,
+    alt: 'Hero Image 5',
   },
   {
     name: "Andi",
-    quote: "Cocok untuk pemula usaha.",
+    quote: "Ayam Geprek Mas Jampang punya konsep yang kuat dan rasa yang konsisten. Timnya profesional dan selalu siap membantu mitra. Pelanggan di tempat saya sangat antusias. Saya puas dan ingin buka cabang lagi.",
     rating: 4,
+    src: HeroImage6,
+    alt: 'Hero Image 6',
   },
 ];
 

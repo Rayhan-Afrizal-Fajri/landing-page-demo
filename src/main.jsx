@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import 'animate.css';
-import PreLoader from './components/Preloader.jsx';
+// import PreLoader from './components/Preloader.jsx';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -11,7 +11,7 @@ import PreLoader from './components/Preloader.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PreLoader />
+    {/* <PreLoader /> */}
       <App />
   </StrictMode>,
 )

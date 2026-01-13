@@ -1,131 +1,125 @@
 import { certificates } from '../data';
-import { heroImages } from '../data';
+import ImageNarrativeSection from '../components/ImageNarrativeSection';
+// import { heroImages } from '../data';
+
+const profileImages = [
+  // {
+  //   src: 'https://images.unsplash.com/photo-1604908177522-0406c48a56da?w=1200',
+  //   alt: 'Dapur Ayam Geprek',
+  // },
+  {
+    src: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200',
+    alt: 'Proses Pengolahan',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200',
+    alt: 'Ayam Geprek',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200',
+    alt: 'Outlet Ayam Geprek',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1200',
+    alt: 'Penyajian',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200',
+    alt: 'Gerai',
+  },
+];
 
 export default function Profile() {
-
-  const profileImage = heroImages[0];
-
   return (
-    <section
-      id="profil"
-      className="bg-secondary/5 py-28"
-    >
-      <div className="container mx-auto px-8 space-y-28">
+    <section id="profil" className="py-20">
+      <div className="container mx-auto px-8 flex flex-col gap-14">
 
-        {/* === PROFIL PERUSAHAAN === */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        {/* === PROFIL FRANCHISE === */}
+        <ImageNarrativeSection
+          title="Tentang Franchise"
+          images={profileImages}
+        >
+          <p>
+            <strong className="text-secondary">Ayam Geprek Sederhana Mas Jampang</strong> adalah
+            brand kuliner lokal yang menghadirkan ayam geprek
+            sederhana dengan rasa konsisten dan harga terjangkau.
+          </p>
+          <p>
+            Sistem operasional kami dirancang mudah dijalankan,
+            bahkan oleh pelaku usaha pemula, dengan SOP yang
+            terstandarisasi.
+          </p>
+          <p>
+            Kami fokus pada keberhasilan mitra melalui pendampingan,
+            pelatihan, dan support berkelanjutan.
+          </p>
+        </ImageNarrativeSection>
+
+        {/* === SEJARAH === */}
+        <ImageNarrativeSection
+          title="Sejarah Singkat"
+          images={profileImages}
+          reverse
+        >
+          <p>
+            Berawal dari gerai kecil dengan satu tujuan sederhana:
+            menyajikan ayam geprek berkualitas dengan harga ramah.
+          </p>
+          <p>
+            Respon pasar yang positif mendorong kami menyusun sistem
+            operasional yang lebih profesional.
+          </p>
+          <p>
+            Hingga kini, brand terus berkembang dan dipercaya oleh
+            mitra di berbagai daerah.
+          </p>
+        </ImageNarrativeSection>
+
+        {/* === PROFIL OWNER === */}
+        <section className="text-center max-w-4xl mx-auto">
+          <h3 className="text-secondary text-3xl md:text-4xl font-bold mb-6">
+            Profil Founder
+          </h3>
+
           <img
-            src={profileImage.src}
-            className="rounded-2xl shadow-lg"
-            alt="Profil Ayam Geprek Mas Jampang"
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800"
+            alt="Founder"
+            className="mx-auto w-40 h-40 rounded-full object-cover mb-6"
           />
 
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-12">
-              Tentang <span className="text-primary">Franchise</span>
-            </h2>
+          <p className="text-accent1 leading-relaxed">
+            <strong className='text-secondary'>Bapak Jampang</strong> adalah pendiri Ayam Geprek
+            Sederhana Mas Jampang. Berbekal pengalaman di bidang
+            kuliner dan semangat berbagi peluang usaha, beliau
+            membangun brand ini untuk membantu masyarakat memulai
+            bisnis yang berkelanjutan.
+          </p>
+        </section>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Ayam Geprek Sederhana Mas Jampang</strong> Ayam Geprek Sederhana Mas Jampang adalah brand kuliner 
-              lokal yang lahir dari semangat menghadirkan makanan lezat, praktis, dan 
-              terjangkau bagi masyarakat Indonesia. Dengan mengusung konsep ayam geprek yang 
-              sederhana namun kaya rasa, kami berkomitmen untuk selalu menjaga kualitas 
-              bahan baku, konsistensi cita rasa, serta standar pelayanan di setiap gerai.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
-                Sejak awal berdiri, Ayam Geprek Sederhana Mas Jampang dikembangkan 
-                dengan sistem operasional yang mudah dijalankan, bahkan oleh pelaku 
-                usaha pemula. Mulai dari proses pengolahan, penyajian, hingga manajemen operasional, 
-                seluruh sistem telah dirancang agar efisien, terukur, dan dapat direplikasi 
-                dengan baik di berbagai lokasi.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
-                Kami percaya bahwa kesuksesan sebuah brand tidak hanya diukur 
-                dari jumlah gerai, tetapi juga dari keberhasilan para mitra yang tumbuh 
-                bersama kami. Oleh karena itu, Ayam Geprek Sederhana Mas Jampang 
-                hadir sebagai solusi franchise yang tidak hanya menawarkan produk, 
-                tetapi juga pendampingan bisnis, pelatihan, dan dukungan berkelanjutan.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              Dengan margin usaha yang kompetitif, permintaan pasar yang stabil, 
-              serta brand yang terus berkembang, Ayam Geprek Sederhana 
-              Mas Jampang menjadi pilihan tepat bagi Anda yang ingin memulai 
-              atau mengembangkan bisnis kuliner dengan risiko yang lebih terkontrol.
-            </p>
-          </div>
-        </div>
-
-        {/* === SEJARAH SINGKAT === */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h3 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-10">
-                    Sejarah Singkat
-                </h3>
-
-                <div className="space-y-6 text-gray-600 leading-relaxed">
-                    <p>
-                    Perjalanan Ayam Geprek Sederhana Mas Jampang dimulai dari sebuah 
-                    gerai kecil yang berfokus pada satu tujuan sederhana: menyajikan ayam 
-                    geprek dengan rasa yang konsisten dan harga yang ramah di kantong. Berbekal 
-                    resep yang terus disempurnakan serta sambal khas yang menjadi ciri 
-                    utama, gerai pertama mendapatkan respon positif dari pelanggan.
-                    </p>
-                    <p>
-                    Seiring berjalannya waktu, permintaan yang terus meningkat mendorong kami untuk 
-                    memperbaiki sistem kerja, menyusun standar operasional, serta memastikan 
-                    kualitas produk tetap terjaga meskipun jumlah pesanan semakin bertambah. Dari 
-                    sinilah fondasi bisnis Ayam Geprek Sederhana Mas Jampang mulai 
-                    terbentuk secara lebih profesional.
-                    </p>
-                    <p>
-                    Melihat potensi pasar yang besar dan minat masyarakat terhadap konsep 
-                    kemitraan, kami memutuskan untuk membuka peluang franchise. Langkah ini 
-                    diambil dengan persiapan matang, mulai dari penyusunan SOP, 
-                    pelatihan mitra, hingga sistem pendampingan agar setiap mitra dapat 
-                    menjalankan usaha dengan percaya diri.
-                    </p>
-                    <p>
-                    Hingga saat ini, Ayam Geprek Sederhana Mas Jampang terus 
-                    berkembang dan dipercaya oleh mitra di berbagai daerah. Kami senantiasa 
-                    melakukan inovasi, baik dari sisi menu, pelayanan, maupun 
-                    sistem bisnis, demi memastikan bahwa brand ini dapat 
-                    terus tumbuh secara berkelanjutan dan memberikan manfaat jangka 
-                    panjang bagi seluruh mitra.
-                    </p>
-                </div>
-            </div>
-            <img
-                src={profileImage.src}
-                className="rounded-2xl shadow-lg"
-                alt="Profil Ayam Geprek Mas Jampang"
-            />
-        </div>
-
-        {/* === SERTIFIKAT & PENCAPAIAN === */}
-        <div>
-          <h3 className="text-3xl font-bold text-center mb-12">
+        {/* === SERTIFIKAT === */}
+        <section>
+          <h3 className="text-secondary text-3xl md:text-4xl font-bold text-center mb-12">
             Sertifikat & Pencapaian
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {certificates.map((i) => (
+            {certificates.map((c) => (
               <div
-                key={i}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition"
+                key={c.alt}
+                className="bg-white rounded-2xl p-6 text-center shadow-sm"
               >
                 <img
-                  src={i.src}
-                  alt={i.alt}
-                  className="mx-auto mb-4 h-42 object-contain"
+                  src={c.src}
+                  alt={c.alt}
+                  className="mx-auto h-40 object-contain mb-4"
                 />
                 <p className="text-sm font-medium text-gray-700">
-                  {i.alt}
+                  {c.alt}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
       </div>
     </section>

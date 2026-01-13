@@ -1,80 +1,106 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import ThemeToggle from "../components/ui/ThemeToggle";
 
-const NavBar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+const navLinks = [
+  { label: "Beranda", href: "#beranda" },
+  { label: "Profil", href: "#profil" },
+  { label: "Kemitraan", href: "#kemitraan" },
+  { label: "Testimoni", href: "#testimoni" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Lokasi", href: "#lokasi" },
+];
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+export default function NavBar({ themeState }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, setTheme } = themeState;
 
-    return (
-        <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-            isScrolled ? 'bg-white shadow-md py-3' : 'bg-white py-4'
-        }`}>
-            <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between">
-                    
-                    {/* Logo - Versi pendek untuk mobile */}
-                    <div className="flex-shrink-0">
-                        <h1 className="font-bold text-primary">
-                            <span className="hidden sm:inline text-xl">Ayam Geprek Mas Jampang</span>
-                            <span className="sm:hidden text-lg">AG Mas Jampang</span>
-                        </h1>
-                    </div>
+  return (
+    <nav className="sticky top-0 z-50 bg-primary/40 backdrop-blur-2xl">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
 
-                    {/* Hamburger Button */}
-                    <button
-                        className="md:hidden flex flex-col space-y-1.5"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        <span className={`block w-6 h-0.5 bg-gray-700 transition-transform ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                        <span className={`block w-6 h-0.5 bg-gray-700 transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-                        <span className={`block w-6 h-0.5 bg-gray-700 transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
-                    </button>
-
-                    {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center space-x-6">
-                        {['Beranda', 'Profil', 'Kemitraan', 'Testimoni', 'FAQ', 'Lokasi'].map((item) => (
-                            <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-primary font-medium">
-                                {item}
-                            </a>
-                        ))}
-                        <a href="#cta" className="bg-primary text-white px-4 py-2 rounded-md font-medium ml-4">
-                            Daftar Mitra
-                        </a>
-                    </div>
-                </div>
-
-                {/* Mobile Menu */}
-                <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} mt-4 pb-4`}>
-                    <div className="bg-gray-50 rounded-lg p-4 space-y-3">
-                        {['Beranda', 'Profil', 'Kemitraan', 'Testimoni', 'FAQ', 'Lokasi'].map((item) => (
-                            <a
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                className="block py-2.5 px-4 text-gray-700 hover:bg-white rounded-md font-medium"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                {item}
-                            </a>
-                        ))}
-                        <a
-                            href="#cta"
-                            className="block py-2.5 px-4 bg-primary text-white text-center rounded-md font-medium mt-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Daftar Mitra
-                        </a>
-                    </div>
-                </div>
+          {/* Logo */}
+          <div className="flex items-center space-x-3 text-accent1">
+            <div className="w-9 h-9 bg-secondary rounded-md flex items-center justify-center text-accent3 font-bold">
+              AG
             </div>
-        </nav>
-    );
-};
+            <span className="font-semibold text-lg hidden sm:block">
+              Ayam Geprek Mas Jampang
+            </span>
+            <span className="font-semibold sm:hidden">
+              AG Mas Jampang
+            </span>
+          </div>
 
-export default NavBar;
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-sm font-medium text-accent1 hover:text-secondary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <ThemeToggle theme={theme} setTheme={setTheme} />
+
+            <a
+              href="#cta"
+              className="bg-secondary text-[#ECECEC] px-4 py-2 rounded-md text-sm font-medium hover:opacity-90"
+            >
+              Daftar Mitra
+            </a>
+          </div>
+          {/* Mobile Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden p-2 rounded-md hover:bg-accent1/10"
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+      </div>
+
+      {/* ================= MOBILE MENU ================= */}
+      {menuOpen && (
+        <div className="md:hidden fixed inset-0 z-40">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0"
+            onClick={() => setMenuOpen(false)}
+          />
+
+          {/* Panel */}
+          <div className="absolute top-16 left-0 right-0 bg-primary border-t border-primary/10 shadow-lg">
+            <div className="px-4 py-6 space-y-4">
+              <ThemeToggle theme={theme} setTheme={setTheme} />
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block text-sm font-medium text-accent1 hover:text-secondary"
+                >
+                  {link.label}
+                </a>
+              ))}
+
+              <div className="pt-4 border-t border-primary/10">
+                <a
+                  href="#cta"
+                  className="block bg-secondary text-accent1 text-center py-3 rounded-md font-medium"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Daftar Mitra
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}

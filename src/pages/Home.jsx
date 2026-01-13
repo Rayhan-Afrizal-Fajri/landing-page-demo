@@ -9,21 +9,26 @@ import Contact from "../components/Contact"
 import Benefits from "../components/Benefits"
 import CTA from "../components/CTA"
 import Footer from "../components/Footer"
+import { useTheme } from "../hooks/useTheme"
 
 export default function Home() {
+  const themeState = useTheme();
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <Profile />
-      <Partnership />
-      <Testimonial />
-      <FAQ />
-      <Location />
-      {/* <Contact /> */}
-      <CTA />
-      <Footer />
+      <div className="min-h-screen bg-primary flex flex-col">
+        <Navbar themeState={themeState} />
+        <Hero />
+        <Benefits />
+        <Profile />
+        <Partnership />
+        <Testimonial />
+        <FAQ />
+        <Location />
+        {/* <Contact /> */}
+        <CTA />
+        <Footer />
+      </div>
     </>
   )
 }

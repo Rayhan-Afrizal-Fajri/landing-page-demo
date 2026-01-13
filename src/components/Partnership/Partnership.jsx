@@ -1,24 +1,20 @@
 export default function Partnership() {
   return (
-    <section id="kemitraan" className="container mx-auto px-8 py-20 my-20">
-      <div className="grid md:grid-cols-2 gap-14 items-start">
+    <section id="kemitraan" className="py-20 bg-secondary">
+      <div className="grid md:grid-cols-2 gap-14 items-start container mx-auto px-8">
         {/* LEFT */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6">
-            Proposal <span className="text-primary">Kemitraan</span>
+          <h2 className="text-[#ECECEC] text-3xl md:text-4xl lg:text-6xl font-bold mb-6">
+            Proposal <span className="text-accent3">Kemitraan</span>
           </h2>
 
-          <p className="opacity-60 mb-6 leading-relaxed text-xl">
+          <p className="mb-6 leading-relaxed font-light text-[#ECECEC] text-sm md:text-md lg:text-lg">
             Pelajari sistem kemitraan Ayam Geprek Sederhana Mas Jampang
             melalui proposal resmi yang dapat dibaca langsung di website.
           </p>
 
-          <a
-            href="/pdf/partnership-proposal.pdf"
-            target="_blank"
-            className="inline-block bg-primary text-white px-6 py-4 rounded-2xl font-semibold hover:bg-primary/90 transition"
-          >
-            Download Proposal PDF
+          <a href="/pdf/partnership-proposal.pdf" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-[#ECECEC] bg-accent3 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+              Download Proposal
           </a>
         </div>
 

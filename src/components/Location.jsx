@@ -4,16 +4,11 @@ export default function Location() {
 
       {/* location */}
         <div className="px-6 md:px-12">
-            <div className="text-center mb-16">
-                <div
-                    className="inline-flex items-center px-4 py-2 bg-white/20 border border-secondary/35 text-secondary rounded-full text-sm font-semibold mb-4">
-                    <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-                    Kunjungi Kami
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-white/85">
+            <div className="text-center mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-accent1">
                     <span className="text-secondary">Lokasi</span> Kami
                 </h2>
-                <p className="text-sm md:text-md lg:text-lg text-white mb-12 max-w-2xl mx-auto">
+                <p className="text-sm md:text-md lg:text-lg text-accent1 mb-12 max-w-2xl mx-auto">
                     Kunjungi kantor kami untuk pelayanan langsung atau hubungi kami melalui kontak yang tersedia.
                 </p>
             </div>

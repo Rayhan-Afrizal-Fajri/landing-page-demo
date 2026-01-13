@@ -82,6 +82,7 @@ function Card({ data, active }) {
         
         <div className="ml-4">
           <div className="font-bold text-lg">{data.name}</div>
+          <div className="font-medium text-sm italic text-gray-600">Cabang {data.cabang}</div>
         </div>  
       </div>
 

@@ -60,7 +60,7 @@ export default function FAQ() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-accent1/75 leading-relaxed">
+                      <p className="text-accent1 opacity-75 leading-relaxed">
                         {f.a}
                       </p>
                     </div>

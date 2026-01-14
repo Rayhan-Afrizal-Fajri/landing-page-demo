@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import ToastAuto from "../components/ToastAuto"
 import Hero from "../components/Hero"
 import Profile from "../components/Profile"
 import Partnership from "../components/Partnership/Partnership"
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-primary flex flex-col">
+        <ToastAuto />
         <Navbar themeState={themeState} />
         <Hero />
         <Benefits />

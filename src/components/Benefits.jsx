@@ -14,11 +14,13 @@ export default function Benefits() {
               key={i}
               className="p-6 rounded-2xl bg-[#ECECEC] text-[#0D1B2A] shadow hover:shadow-xl transition border border-gray-200"
             >
-              <div className="w-12 h-12 bg-[#C62828] text-primary rounded-xl flex items-center justify-center mb-4">
-                {item.icon}
+              <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 bg-[#C62828] text-primary rounded-xl flex items-center justify-center mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
               </div>
-              <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
-              <p className="opacity-60 text-lg">{item.desc}</p>
+                  <p className="opacity-60 text-lg">{item.desc}</p>
             </div>
           ))}
         </div>

@@ -39,12 +39,29 @@ export default function Profile() {
           title="Tentang Franchise"
           images={profileImages}
         >
-          <p>
+          {/* <p>
             <strong className="text-secondary">Ayam Geprek Sederhana Mas Jampang</strong> adalah
             brand kuliner lokal yang menghadirkan ayam geprek
             sederhana dengan rasa konsisten dan harga terjangkau.
+          </p> */}
+          <p>
+            <strong className="text-secondary">Ayam Geprek Sederhana Mas Jampang</strong> merupakan peluang
+            usaha yang dirancang sesuai kebutuhan pasar akan makanan lezat, terjangkau, dan cepat disajikan.
+            Ayam geprek adalah menu favorit berbagai kalangan dengan permintaan yang terus ada,
+            sehingga memberikan potensi penjualan yang stabil.
           </p>
           <p>
+            Dengan konsep usaha yang sederhana, mitra dapat menjalankan bisnis secara lebih efisien,
+            menekan biaya operasional, dan tetap menjaga kualitas rasa serta pelayanan.
+            Keunggulan kami terletak pada kesederhanaan yang konsisten, sambal khasdengan tingkat kepedasan yang dapat disesuaikan,
+            bahan segar yang diolah langsung saat dipesan, serta porsi jujur dengan harga bersahabat.
+          </p>
+          <p>
+            Didukung visi jangka panjang untuk berkembang menjadi jaringan bisnis yang besar dan berkelanjutan,
+            kami mengajak Anda bergabung sebagai mitra dan tumbuh bersama Ayam Geprek Sederhana Mas Jampang.
+            Saatnya wujudkan bisnis kuliner yang stabil dan menguntungkan bersama kami.
+          </p>
+          {/* <p>
             Sistem operasional kami dirancang mudah dijalankan,
             bahkan oleh pelaku usaha pemula, dengan SOP yang
             terstandarisasi.
@@ -52,7 +69,7 @@ export default function Profile() {
           <p>
             Kami fokus pada keberhasilan mitra melalui pendampingan,
             pelatihan, dan support berkelanjutan.
-          </p>
+          </p> */}
         </ImageNarrativeSection>
 
         {/* === SEJARAH === */}
@@ -62,6 +79,23 @@ export default function Profile() {
           reverse
         >
           <p>
+            Berawal dari keinginan menghadirkan makanan yang lezat, terjangkau, dan dekat dengan selera masyarakat,
+            Ayam Geprek Sederhana Mas Jampang pertama kali berdiri pada tahun 2015.
+          </p>
+          <p>
+            Melihat tingginya minat masyarakat terhadap ayam geprek sebagai makanan favorit sehari-hari,
+            Mas Jampang berinisiatif membuka usaha ayam geprek dengan konsep sederhana namun mengutamakan rasa, kebersihan, dan pelayanan yang ramah.
+          </p>
+          <p>
+            Dengan menggunakan bahan baku segar, sambal khas yang bisa disesuaikan tingkat kepedasannya, serta harga yang ramah di kantong,
+            Ayam Geprek Sederhana Mas Jampang hadir untuk memenuhi kebutuhan makan pelanggan dari berbagai kalangan.
+          </p>
+          <p>
+            Seiring dengan pertumbuhan usaha dan tingginya kepercayaan pelanggan, pada tanggal 09 September 2021
+            Ayam Geprek Sederhana Mas Jampang secara resmi membuka sistem kemitraan franchise, dengan tujuan memperluas jaringan usaha,
+            membuka lapangan kerja, dan tumbuh bersama mitra di berbagai daerah.
+          </p>
+          {/* <p>
             Berawal dari gerai kecil dengan satu tujuan sederhana:
             menyajikan ayam geprek berkualitas dengan harga ramah.
           </p>
@@ -72,7 +106,7 @@ export default function Profile() {
           <p>
             Hingga kini, brand terus berkembang dan dipercaya oleh
             mitra di berbagai daerah.
-          </p>
+          </p> */}
         </ImageNarrativeSection>
 
         {/* === PROFIL OWNER === */}

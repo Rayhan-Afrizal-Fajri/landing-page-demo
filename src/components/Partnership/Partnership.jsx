@@ -8,7 +8,7 @@ export default function Partnership() {
             Proposal <span className="text-accent3">Kemitraan</span>
           </h2>
 
-          <p className="mb-6 leading-relaxed font-light text-[#ECECEC] text-sm md:text-md lg:text-lg">
+          <p className="mb-6 leading-relaxed font-semibold text-[#ECECEC] text-sm md:text-md-semi lg:text-lg">
             Pelajari sistem kemitraan Ayam Geprek Sederhana Mas Jampang
             melalui proposal resmi yang dapat dibaca langsung di website.
           </p>

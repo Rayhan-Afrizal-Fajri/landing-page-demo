@@ -41,24 +41,24 @@ export const heroImages = [
 //benefits data
 export const benefits = [
   {
-    title: "Brand Kuat",
-    desc: "Sudah dikenal luas dengan rasa konsisten.",
-    icon: "🔥",
+    title: "Menu Favorit Sepanjang Masa",
+    desc: "Ayam geprek adalah makanan populer yang disukai semua kalangan, membuat peluang penjualan selalu terbuka luas.",
+    icon: "⭐",
   },
   {
-    title: "Modal Terjangkau",
-    desc: "Sistem kemitraan fleksibel & transparan.",
-    icon: "💰",
+    title: "Harga Terjangkau, Untung Maksimal",
+    desc: "Konsep harga ramah konsumen membantu menarik lebih banyak pembeli tanpa mengorbankan margin keuntungan.",
+    icon: "💸",
   },
   {
-    title: "Support Penuh",
-    desc: "Training, SOP, dan pendampingan.",
-    icon: "🤝",
+    title: "Cepat Saji, Perputaran Cepat",
+    desc: "Sistem penyajian praktis memungkinkan pelayanan lebih cepat dan volumen penjualan yang lebih tinggi.",
+    icon: "⚡",
   },
   {
-    title: "Support Penuh",
-    desc: "Training, SOP, dan pendampingan.",
-    icon: "🤝",
+    title: "Operasional Mudah & Efisien",
+    desc: "Konsep sederhana dirancang agar bisnis mudah dijalankan dengan biaya operasional rendah dan kualitas tetap terjaga.",
+    icon: "🔧",
   },
 ];
 
@@ -66,52 +66,28 @@ export const benefits = [
 // testimonial data
 export const testimonials = [
   {
-    name: "Budi",
-    cabang: "Rinjani",
-    quote: "Saya sangat puas bergabung dengan franchise Ayam Geprek Mas Jampang. Dari awal pendaftaran sampai buka outlet, semuanya dibimbing dengan jelas. Rasa ayamnya konsisten dan disukai banyak pelanggan. Penjualannya cepat berkembang.",
+    name: "Toni",
+    cabang: "Jl.Rinjani, Cilacap",
+    quote: "Bergabung sebagai mitra Ayam Geprek Sederhana Mas Jampang memberikan kemudahan dalam memulai usaha kuliner. Sistem kemitraan yang terstruktur, resep yang terstandarisasi, serta pendampingan dari pihak pusat sangat membantu kelancaran operasional usaha",
     rating: 5,
     src: HeroImage1,
     alt: 'Hero Image 1',
   },
   {
-    name: "Rina",
-    cabang: "Damar",
-    quote: "Franchise Ayam Geprek Mas Jampang sangat cocok untuk pemula seperti saya. Sistemnya rapi dan bahan baku mudah didapat. Tim pusat juga responsif saat saya butuh bantuan. Alhamdulillah, usaha berjalan lancar.",
+    name: "Ibnu",
+    cabang: "Jl.Tentara Pelajar, Kebumen",
+    quote: "Franchise Ayam Geprek Mas Jampang sangat cocok untuk pemula seperti saya. Sistemnya rapi dan bahan baku mudah didapat. Tim pusat juga responsif saat saya butuh.",
     rating: 4,
     src: HeroImage2,
     alt: 'Hero Image 2',
   },
   {
-    name: "Steven",
-    cabang: "Rawa Bendungan",
-    quote: "Awalnya ragu, tapi setelah bergabung hasilnya melebihi ekspektasi. Brand Ayam Geprek Mas Jampang sudah dikenal, jadi promosi lebih mudah. Rasa sambalnya khas dan bikin pelanggan balik lagi. Sangat direkomendasikan.",
+    name: "Tri Setiaji",
+    cabang: "Lapangan Krida, Cilacap",
+    quote: "Awalnya ragu, tapi setelah bergabung hasilnya melebihi ekspektasi. Brand Ayam Geprek Mas Jampang sudah dikenal, jadi promosi lebih mudah. Rasa sambalnya khas dan bikin pelanggan",
     rating: 4,
     src: HeroImage3,
     alt: 'Hero Image 3',
-  },
-  {
-    name: "Fardan",
-    cabang: "Sidanegara",
-    quote: "Saya memilih Ayam Geprek Mas Jampang karena modalnya terjangkau. SOP jelas dan pelatihannya mudah dipahami. Dalam waktu singkat, outlet saya sudah punya pelanggan tetap. Usaha ini sangat menjanjikan.",
-    rating: 4,
-    src: HeroImage4,
-    alt: 'Hero Image 4',
-  },
-  {
-    name: "Gina",
-    cabang: "Bulupayung",
-    quote: "Bergabung dengan franchise ini adalah keputusan tepat. Dukungan manajemen sangat membantu operasional harian. Menu sederhana tapi laris manis. Omzetnya stabil dan terus meningkat.",
-    rating: 4,
-    src: HeroImage5,
-    alt: 'Hero Image 5',
-  },
-  {
-    name: "Andi",
-    cabang: "Alun-alun",
-    quote: "Ayam Geprek Mas Jampang punya konsep yang kuat dan rasa yang konsisten. Timnya profesional dan selalu siap membantu mitra. Pelanggan di tempat saya sangat antusias. Saya puas dan ingin buka cabang lagi.",
-    rating: 4,
-    src: HeroImage6,
-    alt: 'Hero Image 6',
   },
 ];
 
@@ -119,44 +95,48 @@ export const testimonials = [
 export const faqs = [
   {
     q: "Apa yang membedakan Ayam Geprek Mas Jampang dengan yang lain?",
-    a: "Ayam Geprek Mas Jampang memiliki cita rasa khas yang konsisten dengan resep racikan sendiri, khususnya pada sambal dan bumbu ayam. Selain itu, konsep usaha kami dirancang sederhana namun profesional, sehingga mudah dijalankan oleh siapa saja. Kami juga mengutamakan kualitas bahan baku, pelayanan cepat, serta dukungan penuh kepada mitra agar usaha dapat berkembang secara berkelanjutan."
+    a: "Keunikan utama Ayam Geprek Sederhana Mas Jampang terletak pada konsep kesederhanaan yang konsisten namun tetap mengutamakan rasa dan kepuasan pelanggan. Ayam geprek disajikan dengan bumbu sambal khas yang pedasnya bisa disesuaikan, dibuat dari bahan segar dan diolah langsung saat dipesan, sehingga rasanya selalu hangat dan nikmat. Selain itu, harga yang terjangkau, porsi yang jujur, serta pelayanan ramah ala warung lokal membuat pelanggan merasa dekat dan nyaman, seperti makan di tempat langganan sendiri. Kombinasi inilah yang membedakan Ayam Geprek Sederhana Mas Jampang dari usaha ayam geprek lainnya."
   },
   {
-    q: "Apakah sambalnya racikan sendiri?",
-    a: "Ya, sambal Ayam Geprek Mas Jampang merupakan racikan khusus yang dikembangkan secara internal dan tidak dijual bebas di pasaran. Racikan ini telah melalui proses uji rasa dan penyempurnaan agar memiliki karakter pedas yang nikmat dan disukai banyak pelanggan. Resep sambal ini menjadi salah satu keunggulan utama yang membedakan kami dari brand sejenis."
+    q: "Apakah semua cabang menggunakan resep yang sama?",
+    a: "Ya, seluruh cabang menggunakan resep, bumbu, dan standar yang sama dari pusat."
   },
   {
-    q: "Apakah tersedia level kepedasan?",
-    a: "Tersedia berbagai pilihan level kepedasan yang dapat disesuaikan dengan selera konsumen, mulai dari tidak pedas hingga sangat pedas. Dengan adanya variasi level ini, pelanggan memiliki kebebasan memilih sesuai preferensi, sehingga dapat menjangkau pasar yang lebih luas, baik pecinta pedas maupun konsumen umum."
+    q: "Bagaimana cara menjaga konsistensi rasa di setiap cabang?",
+    a: "Konsistensi dijaga melalui standarisasi resep tertulis, penggunaan bahan baku yang sama, sambal dan bumbu inti terpusat, SOP proses memasak, pelatihan karyawan, serta kontrol kualitas rutin. Mitra tidak diperbolehkan mengubah resep."
   },
   {
-    q: "Apakah bahan baku disediakan dari pusat?",
-    a: "Sebagian bahan baku utama dan bumbu inti disediakan atau direkomendasikan dari pusat untuk menjaga konsistensi rasa di setiap outlet. Namun, untuk bahan segar seperti ayam dan sayuran, mitra dapat menyesuaikan dengan supplier lokal yang telah disetujui agar tetap efisien dan sesuai standar kualitas yang ditetapkan."
+    q: "Apa menu andalan atau best seller?",
+    a: "Ayam Geprek Sambal Khas Mas Jampang."
   },
   {
-    q: "Apakah usaha ini cocok untuk pemula?",
-    a: "Usaha Ayam Geprek Mas Jampang sangat cocok untuk pemula karena sistem operasionalnya sederhana dan telah terstandarisasi. Mitra akan dibekali dengan SOP yang jelas, panduan operasional, serta pelatihan awal sehingga dapat menjalankan usaha dengan lebih percaya diri meskipun belum memiliki pengalaman di bidang kuliner."
+    q: "Apakah usaha ini bisa dijalankan oleh pemula tanpa pengalaman kuliner?",
+    a: "Bisa. Sistem usaha dirancang sederhana dengan SOP yang jelas serta didukung pelatihan yang mudah dipahami."
   },
   {
-    q: "Berapa lama persiapan hingga outlet bisa dibuka?",
-    a: "Waktu persiapan hingga outlet siap dibuka relatif singkat, umumnya berkisar antara 2 hingga 4 minggu, tergantung pada kesiapan lokasi dan kelengkapan administrasi. Dalam periode ini, mitra akan melalui tahap persiapan alat, bahan, pelatihan, dan penyesuaian lokasi agar outlet siap beroperasi dengan optimal."
+    q: "Apakah tersedia SOP tertulis dan pelatihan masak?",
+    a: "Ya, mitra mendapatkan SOP tertulis lengkap serta pelatihan memasak operasional sebelum outlet dibuka."
   },
   {
-    q: "Apakah ada pelatihan sebelum membuka usaha?",
-    a: "Ya, kami menyediakan pelatihan menyeluruh sebelum outlet dibuka. Pelatihan ini mencakup proses produksi, pengolahan menu, standar pelayanan, manajemen operasional, hingga pengelolaan kebersihan dan kualitas. Tujuannya agar mitra memahami alur usaha secara menyeluruh dan siap menjalankan outlet dengan standar yang telah ditetapkan."
+    q: "Apakah mitra mendapatkan pendampingan setelah outlet dibuka?",
+    a: "Ya, mitra akan mendapatkan pendampingan saat pembukaan atau grand opening outlet."
   },
   {
-    q: "Apakah ada pendampingan setelah outlet berjalan?",
-    a: "Tentu, kami memberikan pendampingan berkelanjutan setelah outlet mulai beroperasi. Pendampingan ini meliputi konsultasi operasional, evaluasi kinerja, serta dukungan pemasaran. Dengan adanya pendampingan ini, mitra tidak berjalan sendiri dan dapat terus meningkatkan performa usahanya."
+    q: "Apakah usaha bisa dijalankan dengan gerobak atau outlet kecil?",
+    a: "Bisa. Usaha dapat dijalankan dengan sistem gerobak, kaki lima, maupun outlet permanen."
   },
   {
-    q: "Apakah bisa buka di area kecil atau pinggir jalan?",
-    a: "Ya, konsep Ayam Geprek Mas Jampang sangat fleksibel dan dapat dijalankan di area kecil, ruko, maupun pinggir jalan. Model usaha ini tidak membutuhkan tempat yang luas, sehingga cocok untuk berbagai kondisi lokasi, termasuk area dengan lalu lintas tinggi dan lingkungan padat penduduk."
+    q: "Apakah bahan baku disediakan oleh pusat?",
+    a: "Ya, bahan baku disediakan oleh pusat."
   },
   {
-    q: "Apakah bisa dijalankan secara full-time maupun part-time?",
-    a: "Usaha ini dapat dijalankan secara full-time maupun part-time, tergantung kebutuhan dan ketersediaan waktu mitra. Dengan sistem operasional yang sederhana dan adanya SOP yang jelas, mitra tetap dapat menjalankan usaha secara efektif meskipun tidak selalu berada di lokasi setiap saat."
-  }
+    q: "Apakah mitra boleh membeli bahan baku di luar?",
+    a: "Tidak. Hal ini untuk menjada kualitas dan konsistensi rasa di seluruh cabang."
+  },
+  {
+    q: "Bagaimana ketentuan harga jual produk?",
+    a: "Harga jual menyesuaikan dengan daerah dan harga pasaran setempat, dengan tetap mengikuti arahan manajemen."
+  },
 ];
 
 
@@ -197,43 +177,15 @@ export const certificates = [
 
 export const toastTestimonials = [
   {
-    name: "Budi",
-    branch: "Cilacap",
+    name: "Toni",
+    branch: "Rinjani",
   },
   {
-    name: "Siti",
-    branch: "Banyumas",
+    name: "Ibnu",
+    branch: "Jl.Tentara Pelajar, Kebumen",
   },
   {
-    name: "Andi",
-    branch: "Kebumen",
-  },
-  {
-    name: "Rina",
-    branch: "Magelang",
-  },
-  {
-    name: "Fajar",
-    branch: "Purwokerto",
-  },
-  {
-    name: "Dewi",
-    branch: "Cikarang",
-  },
-  {
-    name: "Rizky",
-    branch: "Bekasi",
-  },
-  {
-    name: "Nina",
-    branch: "Solo",
-  },
-  {
-    name: "Agus",
-    branch: "Purworejo",
-  },
-  {
-    name: "Lina",
-    branch: "Banjarnegara",
+    name: "Tri Setiaji",
+    branch: "Lapangan Krida, Cilacap",
   },
 ]

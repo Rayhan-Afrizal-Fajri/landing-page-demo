@@ -24,7 +24,7 @@ export default function ToastAuto() {
         <Toaster
             position="bottom-right"
             toastOptions={{
-                duration: 6000,
+                duration: 4000,
                 style: {
                     borderRadius: "12px",
                 },

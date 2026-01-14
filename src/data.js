@@ -194,3 +194,46 @@ export const certificates = [
   },
 
 ];
+
+export const toastTestimonials = [
+  {
+    name: "Budi",
+    branch: "Cilacap",
+  },
+  {
+    name: "Siti",
+    branch: "Banyumas",
+  },
+  {
+    name: "Andi",
+    branch: "Kebumen",
+  },
+  {
+    name: "Rina",
+    branch: "Magelang",
+  },
+  {
+    name: "Fajar",
+    branch: "Purwokerto",
+  },
+  {
+    name: "Dewi",
+    branch: "Cikarang",
+  },
+  {
+    name: "Rizky",
+    branch: "Bekasi",
+  },
+  {
+    name: "Nina",
+    branch: "Solo",
+  },
+  {
+    name: "Agus",
+    branch: "Purworejo",
+  },
+  {
+    name: "Lina",
+    branch: "Banjarnegara",
+  },
+]

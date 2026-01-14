@@ -57,7 +57,7 @@ export default function NavBar({ themeState }) {
           {/* Mobile Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-md hover:bg-accent1/10"
+            className="md:hidden p-2 rounded-md text-accent1"
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -91,7 +91,7 @@ export default function NavBar({ themeState }) {
               <div className="pt-4 border-t border-primary/10">
                 <a
                   href="#cta"
-                  className="block bg-secondary text-accent1 text-center py-3 rounded-md font-medium"
+                  className="block bg-secondary text-[#ECECEC] text-center py-3 rounded-md font-medium"
                   onClick={() => setMenuOpen(false)}
                 >
                   Daftar Mitra

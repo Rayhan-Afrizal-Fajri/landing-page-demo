@@ -76,7 +76,7 @@ function Card({ data, active }) {
       ${active ? "shadow-xl" : ""}`}
     >
       <div className="flex items-center mb-6">
-        <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold">
+        <div className="w-16 h-16 bg-[#C62828] rounded-full flex items-center justify-center text-white text-2xl font-bold">
           {data.name.charAt(0)}
         </div>
         

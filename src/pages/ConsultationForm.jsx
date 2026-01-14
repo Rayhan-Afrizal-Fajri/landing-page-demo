@@ -13,7 +13,7 @@ export default function ConsultationForm() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = async (e) => {
+const handleSubmit = (e) => {
   e.preventDefault();
 
   const sheetUrl =
@@ -27,14 +27,13 @@ const handleSubmit = async (e) => {
   formData.append("phone", form.phone);
   formData.append("note", form.note);
 
-  try {
-    await fetch(sheetUrl, {
-      method: "POST",
-      body: formData, // ⬅️ TANPA headers
-    });
-  } catch (error) {
-    console.error("Gagal simpan ke spreadsheet", error);
-  }
+  // ⬅️ KIRIM TANPA MENUNGGU
+  fetch(sheetUrl, {
+    method: "POST",
+    body: formData,
+  }).catch(() => {
+    console.warn("Gagal simpan ke sheet (diabaikan)");
+  });
 
   const message = `
 Halo Mas Jampang
@@ -46,10 +45,14 @@ No WA: ${form.phone}
 Catatan: ${form.note}
   `;
 
-  window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
+
+  // ⬅️ buka WhatsApp di tab baru
+  window.open(waUrl, "_blank", "noopener,noreferrer");
 };
+
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-muted px-6">
@@ -84,7 +87,7 @@ Catatan: ${form.note}
           />
 
           <input
-            type="tel"
+            type="number"
             name="phone"
             placeholder="No WhatsApp Aktif"
             required

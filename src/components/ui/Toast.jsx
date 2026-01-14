@@ -5,7 +5,7 @@ export default function Toast() {
     <Toaster
       position="bottom-right"
       toastOptions={{
-        duration: 4000,
+        duration: 6000,
         style: {
           borderRadius: "12px",
         },

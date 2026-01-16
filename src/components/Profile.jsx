@@ -112,7 +112,7 @@ export default function Profile() {
         {/* === PROFIL OWNER === */}
         <section className="text-center max-w-4xl mx-auto">
           <h3 className="text-secondary text-3xl md:text-4xl font-bold mb-6">
-            Profil Founder
+            Profil Owner
           </h3>
 
           <img
@@ -122,7 +122,7 @@ export default function Profile() {
           />
 
           <p className="text-accent1 leading-relaxed">
-            <strong className='text-secondary'>Bapak Jampang</strong> adalah pendiri Ayam Geprek
+            <strong className='text-secondary'>Bayu Tri Wahyudi</strong> adalah pendiri Ayam Geprek
             Sederhana Mas Jampang. Berbekal pengalaman di bidang
             kuliner dan semangat berbagi peluang usaha, beliau
             membangun brand ini untuk membantu masyarakat memulai
@@ -131,7 +131,7 @@ export default function Profile() {
         </section>
 
         {/* === SERTIFIKAT === */}
-        <section>
+        {/* <section>
           <h3 className="text-secondary text-3xl md:text-4xl font-bold text-center mb-12">
             Sertifikat & Pencapaian
           </h3>
@@ -153,7 +153,7 @@ export default function Profile() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
       </div>
     </section>

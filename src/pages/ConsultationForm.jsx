@@ -7,52 +7,62 @@ export default function ConsultationForm() {
     city: "",
     phone: "",
     note: "",
+    source: "",
+    sourceOther: "",
   });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const sheetUrl =
-    "https://script.google.com/macros/s/AKfycbxLkYlST5ERwKdRpLF_7FD1QykRB42qfJdZadDfbkPiSB87vDDu-tKMIpcmhbjp61DKEA/exec";
+    const sheetUrl =
+      "https://script.google.com/macros/s/AKfycbzh4k0AYS8Hwu5muSTqK3slhsz68R0csHlYHSeHUI_rQgn2CSgVd5Uytc4mQhvFHy-f/exec";
 
-  const phoneNumber = "62895392167815";
+    const phoneNumber = "62895392167815";
 
-  const formData = new FormData();
-  formData.append("name", form.name);
-  formData.append("city", form.city);
-  formData.append("phone", form.phone);
-  formData.append("note", form.note);
+    const finalSource =
+      form.source === "Lainnya"
+        ? form.sourceOther
+        : form.source;
 
-  // ⬅️ KIRIM TANPA MENUNGGU
-  fetch(sheetUrl, {
-    method: "POST",
-    body: formData,
-  }).catch(() => {
-    console.warn("Gagal simpan ke sheet (diabaikan)");
-  });
+    const formData = new FormData();
+    formData.append("name", form.name);
+    formData.append("city", form.city);
+    formData.append("phone", form.phone);
+    formData.append("note", form.note);
+    formData.append("source", finalSource);
 
-  const message = `
-Halo Mas Jampang
-Saya tertarik franchise Ayam Geprek.
+    // Kirim ke Google Sheet tanpa menunggu
+    fetch(sheetUrl, {
+      method: "POST",
+      body: formData,
+    }).catch(() => {
+      console.warn("Gagal simpan ke sheet (diabaikan)");
+    });
 
-Nama: ${form.name}
-Asal: ${form.city}
-No WA: ${form.phone}
-Catatan: ${form.note}
-  `;
+    const textNote = form.note ? `\nCatatan Tambahan:\n${form.note}\n` : '';
+    const wave = "\u{1F44B}";
+    const pray = "\u{1F64F}";
 
-  const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+    const message = `
+Halo Mas Bayu,
+Perkenalkan, saya ${form.name} dari ${form.city}.
+Saya tertarik untuk mengetahui lebih lanjut mengenai peluang franchise Ayam Geprek Sederhana Mas Jampang.
 
-  // ⬅️ buka WhatsApp di tab baru
-  window.open(waUrl, "_blank", "noopener,noreferrer");
-};
+Nomor WhatsApp aktif saya: ${form.phone}
+Saya mengetahui Ayam Geprek Sederhana Mas Jampang dari ${finalSource}
+${textNote}
+Terima kasih, saya tunggu informasnya ya!`;
 
+    const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-muted px-6">
@@ -63,6 +73,7 @@ Catatan: ${form.note}
         >
           ← Kembali
         </Link>
+
         <h1 className="text-3xl font-bold text-primary mb-6 text-center">
           Form Konsultasi Franchise
         </h1>
@@ -95,9 +106,51 @@ Catatan: ${form.note}
             className="w-full p-3 border rounded-xl"
           />
 
+          {/* SOURCE */}
+          <div className="space-y-2">
+            <p className="font-semibold text-sm">
+              Dari mana Anda mengetahui Ayam Geprek Sederhana   Mas Jampang?
+            </p>
+
+            {[
+              "Google",
+              "Facebook",
+              "Instagram",
+              "TikTok",
+              "Rekomendasi Teman/Keluarga",
+              "Lainnya",
+            ].map((item) => (
+              <label
+                key={item}
+                className="flex items-center gap-2 text-sm"
+              >
+                <input
+                  type="radio"
+                  name="source"
+                  value={item}
+                  checked={form.source === item}
+                  onChange={handleChange}
+                  required
+                />
+                {item}
+              </label>
+            ))}
+
+            {form.source === "Lainnya" && (
+              <input
+                type="text"
+                name="sourceOther"
+                placeholder="Sebutkan sumber lainnya"
+                required
+                onChange={handleChange}
+                className="w-full p-3 border rounded-xl mt-2"
+              />
+            )}
+          </div>
+
           <textarea
             name="note"
-            placeholder="Catatan (opsional)"
+            placeholder="Catatan (opsional, misalnya: rencana buka di kota mana, estimasi waktu, dll) "
             rows="3"
             onChange={handleChange}
             className="w-full p-3 border rounded-xl"

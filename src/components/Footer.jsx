@@ -13,11 +13,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-secondary text-accent3 rounded-lg flex items-center justify-center font-bold">
+              <div className="text-sm w-10 h-10 bg-secondary text-accent3 rounded-lg flex items-center justify-center font-bold">
                 AG
               </div>
               <span className="text-xl font-bold">
-                Ayam Geprek Mas Jampang
+                Ayam Geprek Sederhana Mas Jampang
               </span>
             </div>
             <p className=" text-sm leading-relaxed">
@@ -60,7 +60,7 @@ export default function Footer() {
                 <li className="flex items-center gap-2">
                     <Phone size={16}></Phone>
                     <a href="https://wa.me/6281234567890" className="hover:text-[#FBC02D]">
-                        +62 812-3456-7890
+                        (+62) 898-8272-452
                     </a>
                 </li>
                 <li className="flex items-center gap-2">

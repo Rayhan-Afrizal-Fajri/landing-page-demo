@@ -23,33 +23,6 @@ export default function CTA() {
                     Konsultasi Sekarang
                 </a>
               </div>
-
-              <div className="flex flex-wrap justify-center items-center mt-8 gap-6 text-[#ECECEC] text-sm">
-                  <div className="flex items-center">
-                      <svg className="w-4 h-4 text-accent3 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clip-rule="evenodd"></path>
-                      </svg>
-                      Respon Cepat 5 Menit
-                  </div>
-                  <div className="flex items-center">
-                      <svg className="w-4 h-4 text-accent3 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clip-rule="evenodd"></path>
-                      </svg>
-                      Lorem Ipsum
-                  </div>
-                  <div className="flex items-center">
-                      <svg className="w-4 h-4 text-accent3 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clip-rule="evenodd"></path>
-                      </svg>
-                      Dolor sit amet
-                  </div>
-              </div>
           </div>
       </div>
     </section>

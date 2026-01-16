@@ -54,13 +54,16 @@ export default function NavBar({ themeState }) {
               Daftar Mitra
             </a>
           </div>
-          {/* Mobile Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-md text-accent1"
-          >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          <div className="flex-gap-2 md:hidden">
+            <ThemeToggle theme={theme} setTheme={setTheme} />
+            {/* Mobile Button */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2 rounded-md text-accent1"
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -76,7 +79,6 @@ export default function NavBar({ themeState }) {
           {/* Panel */}
           <div className="absolute top-16 left-0 right-0 bg-primary border-t border-primary/10 shadow-lg">
             <div className="px-4 py-6 space-y-4">
-              <ThemeToggle theme={theme} setTheme={setTheme} />
               {navLinks.map((link) => (
                 <a
                   key={link.label}

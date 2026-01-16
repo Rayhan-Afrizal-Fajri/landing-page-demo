@@ -70,7 +70,7 @@ export default function FAQ() {
             })}
           </div>
           <p className="text-center mt-8 text-accent1">
-            Masih ada pertanyaan? <a href="#" className="text-secondary font-medium">Hubungi kami</a>
+            Masih ada pertanyaan? <a href="#cta" className="text-secondary font-medium">Hubungi kami</a>
           </p>
         </div>
       </div>

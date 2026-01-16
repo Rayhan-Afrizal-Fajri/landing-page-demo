@@ -3,9 +3,9 @@ export default function ThemeToggle({ theme, setTheme }) {
 
   return (
     <label className="inline-flex items-center cursor-pointer text-accent1">
-      <span className="select-none text-sm font-medium">
+      {/* <span className="select-none text-sm font-medium">
         Brand
-      </span>
+      </span> */}
 
       <input
         type="checkbox"
@@ -33,9 +33,9 @@ export default function ThemeToggle({ theme, setTheme }) {
         peer-checked:after:translate-x-4
       " />
 
-      <span className="select-none text-sm font-medium">
+      {/* <span className="select-none text-sm font-medium">
         Clean
-      </span>
+      </span> */}
     </label>
   );
 }

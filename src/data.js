@@ -1,9 +1,9 @@
-import HeroImage1 from '../src/assets/images/hero/hero-1.webp';
-import HeroImage2 from '../src/assets/images/hero/hero-2.png';
-import HeroImage3 from '../src/assets/images/hero/hero-3.jpg';
-import HeroImage4 from '../src/assets/images/hero/hero-4.jpg';
-import HeroImage5 from '../src/assets/images/hero/hero-5.webp';
-import HeroImage6 from '../src/assets/images/hero/hero-6.jpg';
+import HeroImage1 from '../src/assets/images/hero/hero-1.jpeg';
+import HeroImage2 from '../src/assets/images/hero/hero-2.jpeg';
+import HeroImage3 from '../src/assets/images/hero/hero-3.jpeg';
+import HeroImage4 from '../src/assets/images/hero/hero-4.jpeg';
+import HeroImage5 from '../src/assets/images/hero/hero-5.jpeg';
+import HeroImage6 from '../src/assets/images/hero/hero-6.jpeg';
 
 export const heroImages = [
     {

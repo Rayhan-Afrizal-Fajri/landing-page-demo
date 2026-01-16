@@ -1,33 +1,86 @@
 import { certificates } from '../data';
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
-// import { heroImages } from '../data';
+import history1 from '../assets/images/history/history-1.jpeg';
+import history2 from '../assets/images/history/history-2.jpeg';
+import history3 from '../assets/images/history/history-3.jpeg';
+import history4 from '../assets/images/history/history-4.jpeg';
+import history5 from '../assets/images/history/history-5.jpeg';
+import about1 from '../assets/images/about/about-1.jpeg';
+import about2 from '../assets/images/about/about-2.jpeg';
+import about3 from '../assets/images/about/about-3.jpeg';
+import about4 from '../assets/images/about/about-4.jpeg';
+import about5 from '../assets/images/about/about-5.jpeg';
 
-const profileImages = [
-  // {
+
+const historyImages = [
+  // 
   //   src: 'https://images.unsplash.com/photo-1604908177522-0406c48a56da?w=1200',
   //   alt: 'Dapur Ayam Geprek',
   // },
+  // {
+  //   src: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200',
+  //   alt: 'Proses Pengolahan',
+  // },
+  // {
+  //   src: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200',
+  //   alt: 'Ayam Geprek',
+  // },
+  // {
+  //   src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200',
+  //   alt: 'Outlet Ayam Geprek',
+  // },
+  // {
+  //   src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1200',
+  //   alt: 'Penyajian',
+  // },
+  // {
+  //   src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200',
+  //   alt: 'Gerai',
+  // },
   {
-    src: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200',
-    alt: 'Proses Pengolahan',
+    src: history1,
+    alt: 'Gambar gerobak awal',
   },
   {
-    src: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200',
-    alt: 'Ayam Geprek',
+    src: history2,
+    alt: 'Grand Opening Ayam Geprek Sederhana Mas Jampang',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200',
-    alt: 'Outlet Ayam Geprek',
+    src: history3,
+    alt: 'Foto outlet sebelum tercetus brand',
   },
   {
-    src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1200',
-    alt: 'Penyajian',
+    src: history4,
+    alt: 'Foto outlet sebelum tercetus brand',
   },
   {
-    src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200',
-    alt: 'Gerai',
+    src: history5,
+    alt: 'Foto outlet sebelum tercetus brand',
   },
 ];
+
+const aboutImages = [
+  {
+    src: about1,
+    alt: 'Gerobak Cabang Kebumen',
+  },
+  {
+    src: about2,
+    alt: 'Menu 2',
+  },
+  {
+    src: about3,
+    alt: 'Aktivitas pada outlet',
+  },
+  {
+    src: about4,
+    alt: 'Menu 4',
+  },
+  {
+    src: about5,
+    alt: 'Menu 5',
+  },
+]
 
 export default function Profile() {
   return (
@@ -37,13 +90,8 @@ export default function Profile() {
         {/* === PROFIL FRANCHISE === */}
         <ImageNarrativeSection
           title="Tentang Franchise"
-          images={profileImages}
+          images={aboutImages}
         >
-          {/* <p>
-            <strong className="text-secondary">Ayam Geprek Sederhana Mas Jampang</strong> adalah
-            brand kuliner lokal yang menghadirkan ayam geprek
-            sederhana dengan rasa konsisten dan harga terjangkau.
-          </p> */}
           <p>
             <strong className="text-secondary">Ayam Geprek Sederhana Mas Jampang</strong> merupakan peluang
             usaha yang dirancang sesuai kebutuhan pasar akan makanan lezat, terjangkau, dan cepat disajikan.
@@ -61,21 +109,12 @@ export default function Profile() {
             kami mengajak Anda bergabung sebagai mitra dan tumbuh bersama Ayam Geprek Sederhana Mas Jampang.
             Saatnya wujudkan bisnis kuliner yang stabil dan menguntungkan bersama kami.
           </p>
-          {/* <p>
-            Sistem operasional kami dirancang mudah dijalankan,
-            bahkan oleh pelaku usaha pemula, dengan SOP yang
-            terstandarisasi.
-          </p>
-          <p>
-            Kami fokus pada keberhasilan mitra melalui pendampingan,
-            pelatihan, dan support berkelanjutan.
-          </p> */}
         </ImageNarrativeSection>
 
         {/* === SEJARAH === */}
         <ImageNarrativeSection
           title="Sejarah Singkat"
-          images={profileImages}
+          images={historyImages}
           reverse
         >
           <p>
@@ -95,18 +134,6 @@ export default function Profile() {
             Ayam Geprek Sederhana Mas Jampang secara resmi membuka sistem kemitraan franchise, dengan tujuan memperluas jaringan usaha,
             membuka lapangan kerja, dan tumbuh bersama mitra di berbagai daerah.
           </p>
-          {/* <p>
-            Berawal dari gerai kecil dengan satu tujuan sederhana:
-            menyajikan ayam geprek berkualitas dengan harga ramah.
-          </p>
-          <p>
-            Respon pasar yang positif mendorong kami menyusun sistem
-            operasional yang lebih profesional.
-          </p>
-          <p>
-            Hingga kini, brand terus berkembang dan dipercaya oleh
-            mitra di berbagai daerah.
-          </p> */}
         </ImageNarrativeSection>
 
         {/* === PROFIL OWNER === */}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { testimonials } from "../data";
 
-const AUTO_DELAY = 3500;
+const AUTO_DELAY = 6000;
 
 export default function Testimonial() {
   const [centerIndex, setCenterIndex] = useState(0);

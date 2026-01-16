@@ -5,6 +5,10 @@ import HeroImage4 from '../src/assets/images/hero/hero-4.jpeg';
 import HeroImage5 from '../src/assets/images/hero/hero-5.jpeg';
 import HeroImage6 from '../src/assets/images/hero/hero-6.jpeg';
 
+import Testimonial1 from '../src/assets/images/testimonials/testimonials-1.jpeg';
+import Testimonial2 from '../src/assets/images/testimonials/testimonials-2.jpeg';
+import Testimonial3 from '../src/assets/images/testimonials/testimonials-3.jpeg';
+
 export const heroImages = [
     {
         id: 1,
@@ -70,15 +74,15 @@ export const testimonials = [
     cabang: "Jl.Rinjani, Cilacap",
     quote: "Bergabung sebagai mitra Ayam Geprek Sederhana Mas Jampang memberikan kemudahan dalam memulai usaha kuliner. Sistem kemitraan yang terstruktur, resep yang terstandarisasi, serta pendampingan dari pihak pusat sangat membantu kelancaran operasional usaha",
     rating: 5,
-    src: HeroImage1,
-    alt: 'Hero Image 1',
+    src: Testimonial1,
+    alt: 'Testimonial Image 1',
   },
   {
     name: "Ibnu",
     cabang: "Jl.Tentara Pelajar, Kebumen",
     quote: "Franchise Ayam Geprek Mas Jampang sangat cocok untuk pemula seperti saya. Sistemnya rapi dan bahan baku mudah didapat. Tim pusat juga responsif saat saya butuh.",
     rating: 4,
-    src: HeroImage2,
+    src: Testimonial3,
     alt: 'Hero Image 2',
   },
   {
@@ -86,7 +90,7 @@ export const testimonials = [
     cabang: "Lapangan Krida, Cilacap",
     quote: "Awalnya ragu, tapi setelah bergabung hasilnya melebihi ekspektasi. Brand Ayam Geprek Mas Jampang sudah dikenal, jadi promosi lebih mudah. Rasa sambalnya khas dan bikin pelanggan",
     rating: 4,
-    src: HeroImage3,
+    src: Testimonial2,
     alt: 'Hero Image 3',
   },
 ];

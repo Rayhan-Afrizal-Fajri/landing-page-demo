@@ -21,7 +21,7 @@ export default function ConsultationForm() {
     const sheetUrl =
       "https://script.google.com/macros/s/AKfycbzh4k0AYS8Hwu5muSTqK3slhsz68R0csHlYHSeHUI_rQgn2CSgVd5Uytc4mQhvFHy-f/exec";
 
-    const phoneNumber = "62895392167815";
+    const phoneNumber = "628988272452";
 
     const finalSource =
       form.source === "Lainnya"

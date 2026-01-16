@@ -89,15 +89,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-secondary/40 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-          <p>© {year} Ayam Geprek Mas Jampang. All rights reserved.</p>
-          <div className="flex space-x-6">
-            <a href="#" className="hover:text-secondary">
-              Syarat & Ketentuan
-            </a>
-            <a href="#" className="hover:text-secondary">
-              Kebijakan Privasi
-            </a>
-          </div>
+          <p>© {year} Ayam Geprek Sederhana Mas Jampang. All rights reserved.</p>
         </div>
       </div>
     </footer>

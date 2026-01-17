@@ -65,7 +65,7 @@ Terima kasih, saya tunggu informasnya ya!`;
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-muted px-6">
+    <section className="min-h-screen flex items-center justify-center bg-[#C62828] px-6">
       <div className="bg-white rounded-3xl shadow-lg p-8 max-w-xl w-full">
         <Link
           to="/"

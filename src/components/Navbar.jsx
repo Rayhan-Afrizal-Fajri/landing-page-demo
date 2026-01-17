@@ -43,8 +43,6 @@ export default function NavBar({ themeState }) {
               </a>
             ))}
 
-            <ThemeToggle theme={theme} setTheme={setTheme} />
-
             <a
               href="#cta"
               className="bg-secondary text-[#ECECEC] px-4 py-2 rounded-md text-sm font-medium hover:opacity-90"
@@ -53,7 +51,6 @@ export default function NavBar({ themeState }) {
             </a>
           </div>
           <div className="flex-gap-2 md:hidden">
-            <ThemeToggle theme={theme} setTheme={setTheme} />
             {/* Mobile Button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -77,6 +74,9 @@ export default function NavBar({ themeState }) {
           {/* Panel */}
           <div className="absolute top-16 left-0 right-0 bg-primary border-t border-primary/10 shadow-lg">
             <div className="px-4 py-6 space-y-4">
+              <div className="w-full border-b border-primary/10 pb-2">
+                <ThemeToggle theme={theme} setTheme={setTheme} />
+              </div>
               {navLinks.map((link) => (
                 <a
                   key={link.label}

@@ -8,6 +8,17 @@ html {
 
 /* THEME 1 — DEFAULT (GEPREK RED) */
 :root {
+  --color-primary: #FFFFFF;     
+  --color-secondary: #C62828;   
+  --color-tertiary: #121212;
+  --color-muted: #FBC02D;
+  --color-accent1: #0D1B2A;
+  --color-accent2: #E3F2FD;
+  --color-accent3: #FBC02D;
+}
+
+/* THEME 2 — ALTERNATIVE */
+.theme-alt {
   --color-primary: #C62828;
   --color-secondary: #FBC02D;
   --color-tertiary: #1D1D1D;
@@ -15,15 +26,4 @@ html {
   --color-accent1: #ECECEC;
   --color-accent2: #0E1424;
   --color-accent3: #C62828;
-}
-
-/* THEME 2 — ALTERNATIVE */
-.theme-alt {
-  --color-primary: #FFFFFF;     /* biru */
-  --color-secondary: #C62828;   /* hijau */
-  --color-tertiary: #121212;
-  --color-muted: #FBC02D;
-  --color-accent1: #0D1B2A;
-  --color-accent2: #E3F2FD;
-  --color-accent3: #FBC02D;
 }

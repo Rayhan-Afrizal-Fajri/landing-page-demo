@@ -107,19 +107,21 @@ Terima kasih, saya tunggu informasnya ya!`;
 
           {/* SOURCE */}
           <div className="space-y-2">
-            <label className="font-semibold text-sm">
+            {/* <label className="font-semibold text-sm">
               Dari mana Anda mengetahui Ayam Geprek Sederhana Mas Jampang?
-            </label>
+            </label> */}
 
             <select
               name="source"
               required
               value={form.source}
               onChange={handleChange}
-              className="w-full p-3 border rounded-xl bg-white"
+              className={`w-full p-3 border rounded-xl ${
+                form.source === "" ? "text-gray-400" : "text-gray-900"
+              }`}
             >
               <option value="" disabled>
-                Pilih sumber informasi
+                Tahu info Franchise AGS darimana?
               </option>
               <option value="Google">Google</option>
               <option value="Facebook">Facebook</option>

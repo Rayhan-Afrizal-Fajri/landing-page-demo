@@ -10,6 +10,7 @@ import about2 from '../assets/images/about/about-2.jpeg';
 import about3 from '../assets/images/about/about-3.jpeg';
 import about4 from '../assets/images/about/about-4.jpeg';
 import about5 from '../assets/images/about/about-5.jpeg';
+import owner from '../assets/images/owner.png';
 
 
 const historyImages = [
@@ -143,9 +144,9 @@ export default function Profile() {
           </h3>
 
           <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800"
+            src={owner}
             alt="Founder"
-            className="mx-auto w-40 h-40 rounded-full object-cover mb-6"
+            className="mx-auto w-40 h-40 rounded-full object-cover mb-6 bg-secondary"
           />
 
           <p className="text-accent1 leading-relaxed">

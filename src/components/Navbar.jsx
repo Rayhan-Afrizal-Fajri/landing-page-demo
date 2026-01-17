@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "../components/ui/ThemeToggle";
+import logo from "../assets/logo.png";
 
 const navLinks = [
   { label: "Beranda", href: "#beranda" },
@@ -22,8 +23,8 @@ export default function NavBar({ themeState }) {
 
           {/* Logo */}
           <div className="flex items-center space-x-3 text-accent1">
-            <div className="w-9 h-9 bg-secondary rounded-md flex items-center justify-center text-accent3 font-bold">
-              AG
+            <div className="flex items-center justify-center text-accent3 font-bold">
+              <img className="w-9 h-9" src={logo} alt="" />
             </div>
             <span className="font-semibold text-lg hidden sm:block">
               Ayam Geprek Mas Jampang

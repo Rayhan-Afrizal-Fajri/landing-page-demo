@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function ConsultationForm() {
   const [form, setForm] = useState({
@@ -73,6 +74,7 @@ Terima kasih, saya tunggu informasnya ya!`;
           ← Kembali
         </Link>
 
+        <img src={logo} alt="" className="w-24 h-24 mx-auto mb-4" />
         <h1 className="text-3xl font-bold text-primary mb-6 text-center">
           Form Konsultasi Franchise
         </h1>

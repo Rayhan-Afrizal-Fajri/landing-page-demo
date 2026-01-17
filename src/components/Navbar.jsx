@@ -26,8 +26,8 @@ export default function NavBar({ themeState }) {
             <div className="flex items-center justify-center text-accent3 font-bold">
               <img className="w-6 h-6 sm:w-9 sm:h-9" src={logo} alt="" />
             </div>
-            <span className="font-semibold text-xs sm:text-lg">
-              Ayam Geprek Sederhana Mas Jampang
+            <span className="font-semibold text-lg flex gap-1">
+              Ayam Geprek Sederhana <div className="hidden sm:block">Mas Jampang</div>
             </span>
           </div>
 

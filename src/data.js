@@ -110,10 +110,6 @@ export const faqs = [
     a: "Konsistensi dijaga melalui standarisasi resep tertulis, penggunaan bahan baku yang sama, sambal dan bumbu inti terpusat, SOP proses memasak, pelatihan karyawan, serta kontrol kualitas rutin. Mitra tidak diperbolehkan mengubah resep."
   },
   {
-    q: "Apa menu andalan atau best seller?",
-    a: "Ayam Geprek Sambal Khas Mas Jampang."
-  },
-  {
     q: "Apakah usaha ini bisa dijalankan oleh pemula tanpa pengalaman kuliner?",
     a: "Bisa. Sistem usaha dirancang sederhana dengan SOP yang jelas serta didukung pelatihan yang mudah dipahami."
   },

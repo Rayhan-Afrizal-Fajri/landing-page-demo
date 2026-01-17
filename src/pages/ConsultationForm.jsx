@@ -6,7 +6,7 @@ export default function ConsultationForm() {
     name: "",
     city: "",
     phone: "",
-    note: "",
+    // note: "",
     source: "",
     sourceOther: "",
   });
@@ -19,7 +19,7 @@ export default function ConsultationForm() {
     e.preventDefault();
 
     const sheetUrl =
-      "https://script.google.com/macros/s/AKfycbzh4k0AYS8Hwu5muSTqK3slhsz68R0csHlYHSeHUI_rQgn2CSgVd5Uytc4mQhvFHy-f/exec";
+      "https://script.google.com/macros/s/AKfycbx_6kx4zDk7CzaP_rNHIxA9jRw8OL8owURW3jPoaRqzAXNYrH7cND8q6jlgnfNQO4m3/exec";
 
     const phoneNumber = "628988272452";
 
@@ -32,7 +32,7 @@ export default function ConsultationForm() {
     formData.append("name", form.name);
     formData.append("city", form.city);
     formData.append("phone", form.phone);
-    formData.append("note", form.note);
+    // formData.append("note", form.note);
     formData.append("source", finalSource);
 
     // Kirim ke Google Sheet tanpa menunggu
@@ -49,11 +49,10 @@ export default function ConsultationForm() {
 
     const message = `
 Halo Mas Bayu,
-Perkenalkan, saya ${form.name} dari ${form.city}.
-Saya tertarik untuk mengetahui lebih lanjut mengenai peluang franchise Ayam Geprek Sederhana Mas Jampang.
+Perkenalkan, saya *${form.name}* dari *${form.city}*.
+Saya tertarik untuk mengetahui lebih lanjut mengenai *peluang franchise Ayam Geprek Sederhana Mas Jampang*.
 
-Nomor WhatsApp aktif saya: ${form.phone}
-Saya mengetahui Ayam Geprek Sederhana Mas Jampang dari ${finalSource}
+Saya mengetahui Ayam Geprek Sederhana Mas Jampang dari *${finalSource}*
 ${textNote}
 Terima kasih, saya tunggu informasnya ya!`;
 
@@ -108,33 +107,29 @@ Terima kasih, saya tunggu informasnya ya!`;
 
           {/* SOURCE */}
           <div className="space-y-2">
-            <p className="font-semibold text-sm">
-              Dari mana Anda mengetahui Ayam Geprek Sederhana   Mas Jampang?
-            </p>
+            <label className="font-semibold text-sm">
+              Dari mana Anda mengetahui Ayam Geprek Sederhana Mas Jampang?
+            </label>
 
-            {[
-              "Google",
-              "Facebook",
-              "Instagram",
-              "TikTok",
-              "Rekomendasi Teman/Keluarga",
-              "Lainnya",
-            ].map((item) => (
-              <label
-                key={item}
-                className="flex items-center gap-2 text-sm"
-              >
-                <input
-                  type="radio"
-                  name="source"
-                  value={item}
-                  checked={form.source === item}
-                  onChange={handleChange}
-                  required
-                />
-                {item}
-              </label>
-            ))}
+            <select
+              name="source"
+              required
+              value={form.source}
+              onChange={handleChange}
+              className="w-full p-3 border rounded-xl bg-white"
+            >
+              <option value="" disabled>
+                Pilih sumber informasi
+              </option>
+              <option value="Google">Google</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Instagram">Instagram</option>
+              <option value="TikTok">TikTok</option>
+              <option value="Rekomendasi Teman/Keluarga">
+                Rekomendasi Teman / Keluarga
+              </option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
 
             {form.source === "Lainnya" && (
               <input
@@ -143,18 +138,19 @@ Terima kasih, saya tunggu informasnya ya!`;
                 placeholder="Sebutkan sumber lainnya"
                 required
                 onChange={handleChange}
-                className="w-full p-3 border rounded-xl mt-2"
+                className="w-full p-3 border rounded-xl"
               />
             )}
           </div>
 
-          <textarea
+
+          {/* <textarea
             name="note"
             placeholder="Catatan (opsional, misalnya: rencana buka di kota mana, estimasi waktu, dll) "
             rows="3"
             onChange={handleChange}
             className="w-full p-3 border rounded-xl"
-          />
+          /> */}
 
           <button
             type="submit"

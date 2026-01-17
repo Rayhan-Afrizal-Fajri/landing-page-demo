@@ -29,7 +29,7 @@ export default function Location() {
                             </svg>
                         </div>
                         <div>
-                            <h3 className="text-2xl font-bold text-secondary mb-2">
+                            <h3 className="font-bold text-secondary">
                                 Ayam Geprek Sederhana Mas Jampang
                             </h3>
                             <p className="text-gray-600 leading-relaxed">

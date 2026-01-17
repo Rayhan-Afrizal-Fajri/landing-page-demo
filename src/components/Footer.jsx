@@ -1,4 +1,5 @@
 import { AlarmClock, Phone, MapPin } from 'lucide-react';
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -13,10 +14,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="text-sm w-10 h-10 bg-secondary text-accent3 rounded-lg flex items-center justify-center font-bold">
-                AG
+              <div className="w-12 h-12 text-accent3 rounded-lg flex items-center justify-center font-bold">
+                <img className="w-8 h-8" src={logo} alt="" />
               </div>
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 Ayam Geprek Sederhana Mas Jampang
               </span>
             </div>

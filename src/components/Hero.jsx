@@ -43,7 +43,7 @@ function Hero() {
       <section id='beranda' className="py-20">
         <div className="container mx-auto px-8 flex flex-col sm:flex-row justify-between gap-12 items-center">
           {/* IMAGE SLIDER */}
-          <div className="relative w-full h-[420px] overflow-hidden rounded-2xl">
+          <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl">
             <div
               className="flex transition-transform duration-300 ease-in-out h-full"
               style={{

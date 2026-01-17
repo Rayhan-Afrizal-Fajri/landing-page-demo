@@ -15,7 +15,7 @@ export default function ThemeToggle({ theme, setTheme }) {
       />
 
       <div className="
-        relative mx-3 w-9 h-5 
+        relative mx-3 w-9 h-5
         bg-secondary 
         rounded-full 
         peer-focus:outline-none 

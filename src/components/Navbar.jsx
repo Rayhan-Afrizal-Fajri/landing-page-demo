@@ -24,13 +24,10 @@ export default function NavBar({ themeState }) {
           {/* Logo */}
           <div className="flex items-center space-x-3 text-accent1">
             <div className="flex items-center justify-center text-accent3 font-bold">
-              <img className="w-9 h-9" src={logo} alt="" />
+              <img className="w-6 h-6 sm:w-9 sm:h-9" src={logo} alt="" />
             </div>
-            <span className="font-semibold text-lg hidden sm:block">
-              Ayam Geprek Mas Jampang
-            </span>
-            <span className="font-semibold sm:hidden">
-              AG Mas Jampang
+            <span className="font-semibold text-xs sm:text-lg">
+              Ayam Geprek Sederhana Mas Jampang
             </span>
           </div>
 

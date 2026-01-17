@@ -3,7 +3,6 @@ import HeroImage2 from '../src/assets/images/hero/hero-2.jpeg';
 import HeroImage3 from '../src/assets/images/hero/hero-3.jpeg';
 import HeroImage4 from '../src/assets/images/hero/hero-4.jpeg';
 import HeroImage5 from '../src/assets/images/hero/hero-5.jpeg';
-import HeroImage6 from '../src/assets/images/hero/hero-6.jpeg';
 
 import Testimonial1 from '../src/assets/images/testimonials/testimonials-1.jpeg';
 import Testimonial2 from '../src/assets/images/testimonials/testimonials-2.jpeg';
@@ -34,12 +33,7 @@ export const heroImages = [
         id: 5,
         src: HeroImage5,
         alt: 'Hero Image 5'
-    },
-    {
-        id: 6,
-        src: HeroImage6,
-        alt: 'Hero Image 6'
-    },
+    }
 ]
 
 //benefits data

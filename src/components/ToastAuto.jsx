@@ -11,7 +11,11 @@ export default function ToastAuto() {
             const data = toastTestimonials[index];
 
             toast.success(
-                `${data.name} dari cabang ${data.branch} resmi bergabung menjadi mitra Ayam Geprek Mas Jampang`
+                 <span>
+                    <strong>{data.name}</strong> dari cabang{" "}
+                    <strong>{data.branch}</strong> resmi bergabung{" "}
+                    <strong>menjadi mitra Ayam Geprek Sederhana</strong>
+                </span>
             );
 
             index = (index + 1) % toastTestimonials.length;

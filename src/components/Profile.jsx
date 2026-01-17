@@ -4,7 +4,8 @@ import history1 from '../assets/images/history/history-1.jpeg';
 import history2 from '../assets/images/history/history-2.jpeg';
 import history3 from '../assets/images/history/history-3.jpeg';
 import history4 from '../assets/images/history/history-4.jpeg';
-import history5 from '../assets/images/history/history-5.jpeg';
+import history5 from '../assets/images/history/history-5.png';
+import history6 from '../assets/images/history/history-6.jpeg';
 import about1 from '../assets/images/about/about-1.jpeg';
 import about2 from '../assets/images/about/about-2.jpeg';
 import about3 from '../assets/images/about/about-3.jpeg';
@@ -14,30 +15,6 @@ import owner from '../assets/images/owner.png';
 
 
 const historyImages = [
-  // 
-  //   src: 'https://images.unsplash.com/photo-1604908177522-0406c48a56da?w=1200',
-  //   alt: 'Dapur Ayam Geprek',
-  // },
-  // {
-  //   src: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200',
-  //   alt: 'Proses Pengolahan',
-  // },
-  // {
-  //   src: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200',
-  //   alt: 'Ayam Geprek',
-  // },
-  // {
-  //   src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200',
-  //   alt: 'Outlet Ayam Geprek',
-  // },
-  // {
-  //   src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1200',
-  //   alt: 'Penyajian',
-  // },
-  // {
-  //   src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200',
-  //   alt: 'Gerai',
-  // },
   {
     src: history1,
     alt: 'Gambar gerobak awal',
@@ -56,6 +33,10 @@ const historyImages = [
   },
   {
     src: history5,
+    alt: 'Foto outlet sebelum tercetus brand',
+  },
+  {
+    src: history6,
     alt: 'Foto outlet sebelum tercetus brand',
   },
 ];

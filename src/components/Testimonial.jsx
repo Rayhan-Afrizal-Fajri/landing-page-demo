@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { testimonials } from "../data";
+import { brands } from "../data";
 
 const AUTO_DELAY = 6000;
 
@@ -36,43 +37,22 @@ export default function Testimonial() {
 
   return (
     <section id="testimoni" className="py-20 overflow-hidden">
-      <p className="text-black text-center md:text-2xl font-bold mb-2">
+      <p className="text-black text-center md:text-2xl font-bold mb-8">
         Brand kami dapat kamu temukan di
       </p>
 
     {/* Logo brand */}
-   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-      <div className="flex justify-center items-center">
-        <img
-          src="/images/brands/gofood.jpg"
-          alt="Brand 1"
-          className="h-24 md:h-28 lg:h-32 object-contain"
-        />
-      </div>
-
-      <div className="flex justify-center items-center">
-        <img
-          src="/images/brands/maxim.jpg"
-          alt="Brand 2"
-          className="h-24 md:h-28 lg:h-32 object-contain"
-        />
-      </div>
-
-      <div className="flex justify-center items-center">
-        <img
-          src="/images/brands/grabfood.jpg"
-          alt="Brand 3"
-          className="h-24 md:h-28 lg:h-32 object-contain"
-        />
-      </div>
-
-      <div className="flex justify-center items-center">
-        <img
-          src="/images/brands/shopeefood.jpg"
-          alt="Brand 4"
-          className="h-24 md:h-28 lg:h-32 object-contain"
-        />
-      </div>
+   <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-16 mb-20 px-10">
+      {brands.map((brand, i) => (
+        <div className="flex justify-center items-center -mt-10 md:mt-0">
+          <img
+            key={i}
+            src={brand.src}
+            alt={brand.alt}
+            className={`h-${brand.h} md:h-${brand.h + 4} lg:h-${brand.h + 8} object-contain grayscale opacity-60`}
+          />
+        </div>
+      ))}
     </div>
 
       <h2 className="text-accent1 text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-14">

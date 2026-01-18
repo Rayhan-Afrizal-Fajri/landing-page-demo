@@ -62,22 +62,22 @@ export const benefits = [
 
 export const brands = [
   {
-    src: '../public/images/brands/gofood.png',
+    src: '/images/brands/gofood.png',
     alt: 'GoFood Logo',
     h: '24',
   },
   {
-    src: '../public/images/brands/maxim.png',
+    src: '/images/brands/maxim.png',
     alt: 'Maxim Logo',
     h: '20',
   },
   {
-    src: '../public/images/brands/grabfood.png',
+    src: '/images/brands/grabfood.png',
     alt: 'GrabFood Logo',
     h: '22',
   },
   {
-    src: '../public/images/brands/shopeefood.png',
+    src: '/images/brands/shopeefood.png',
     alt: 'ShopeeFood Logo',
     h: '24',
   },

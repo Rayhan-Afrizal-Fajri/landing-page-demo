@@ -137,25 +137,25 @@ export const certificates = [
   {
     title: "Sertifikat Halal",
     pages: [
-      "../public/images/certificates/halal-1.jpg",
-      "../public/images/certificates/halal-2.jpg",
-      "../public/images/certificates/halal-3.jpg",
-      "../public/images/certificates/halal-4.jpg",
-      "../public/images/certificates/halal-5.jpg",
+      "/images/certificates/halal-1.jpg",
+      "/images/certificates/halal-2.jpg",
+      "/images/certificates/halal-3.jpg",
+      "/images/certificates/halal-4.jpg",
+      "/images/certificates/halal-5.jpg",
     ],
   },
   {
     title: "Nomor Induk Berusaha",
     pages: [
-      "../public/images/certificates/nib-1.jpg",
-      "../public/images/certificates/nib-2.jpg",
+      "/images/certificates/nib-1.jpg",
+      "/images/certificates/nib-2.jpg",
     ],
   },
   {
     title: "Hak Merek",
     pages: [
-      "../public/images/certificates/merek-1.jpg",
-      "../public/images/certificates/merek-2.jpg",
+      "/images/certificates/merek-1.jpg",
+      "/images/certificates/merek-2.jpg",
     ],
   }
 ];

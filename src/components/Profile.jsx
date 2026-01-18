@@ -2,18 +2,18 @@ import { certificates } from '../data';
 import { useState } from 'react';
 import CertificateModal from './CertificateModal';
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
-import history1 from '../assets/images/history/history-1.jpeg';
-import history2 from '../assets/images/history/history-2.jpeg';
-import history3 from '../assets/images/history/history-3.png';
-import history4 from '../assets/images/history/history-4.jpeg';
-import history5 from '../assets/images/history/history-5.jpeg';
-import history6 from '../assets/images/history/history-6.jpeg';
-import about1 from '../assets/images/about/about-1.jpeg';
-import about2 from '../assets/images/about/about-2.jpeg';
-import about3 from '../assets/images/about/about-3.jpeg';
-import about4 from '../assets/images/about/about-4.jpeg';
-import about5 from '../assets/images/about/about-5.jpeg';
-import owner from '../assets/images/owner.png';
+import history1 from '../../public/images/history/history-1.jpeg';
+import history2 from '../../public/images/history/history-2.jpeg';
+import history3 from '../../public/images/history/history-3.png';
+import history4 from '../../public/images/history/history-4.jpeg';
+import history5 from '../../public/images/history/history-5.jpeg';
+import history6 from '../../public/images/history/history-6.jpeg';
+import about1 from '../../public/images/about/about-1.jpeg';
+import about2 from '../../public/images/about/about-2.jpeg';
+import about3 from '../../public/images/about/about-3.jpeg';
+import about4 from '../../public/images/about/about-4.jpeg';
+import about5 from '../../public/images/about/about-5.jpeg';
+import owner from '../../public/images/owner.png';
 
 
 const historyImages = [

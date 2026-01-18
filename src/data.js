@@ -1,12 +1,12 @@
-import HeroImage1 from '../src/assets/images/hero/hero-1.jpeg';
-import HeroImage2 from '../src/assets/images/hero/hero-2.jpeg';
-import HeroImage3 from '../src/assets/images/hero/hero-3.jpeg';
-import HeroImage4 from '../src/assets/images/hero/hero-4.jpeg';
-import HeroImage5 from '../src/assets/images/hero/hero-5.jpeg';
+import HeroImage1 from '../public/images/hero/hero-1.jpeg';
+import HeroImage2 from '../public/images/hero/hero-2.jpeg';
+import HeroImage3 from '../public/images/hero/hero-3.jpeg';
+import HeroImage4 from '../public/images/hero/hero-4.jpeg';
+import HeroImage5 from '../public/images/hero/hero-5.jpeg';
 
-import Testimonial1 from '../src/assets/images/testimonials/testimonials-1.jpeg';
-import Testimonial2 from '../src/assets/images/testimonials/testimonials-2.jpeg';
-import Testimonial3 from '../src/assets/images/testimonials/testimonials-3.jpeg';
+import Testimonial1 from '../public/images/testimonials/testimonials-1.jpeg';
+import Testimonial2 from '../public/images/testimonials/testimonials-2.jpeg';
+import Testimonial3 from '../public/images/testimonials/testimonials-3.jpeg';
 
 export const heroImages = [
     {
@@ -137,25 +137,25 @@ export const certificates = [
   {
     title: "Sertifikat Halal",
     pages: [
-      "../src/assets/images/certificates/halal-1.jpg",
-      "../src/assets/images/certificates/halal-2.jpg",
-      "../src/assets/images/certificates/halal-3.jpg",
-      "../src/assets/images/certificates/halal-4.jpg",
-      "../src/assets/images/certificates/halal-5.jpg",
+      "../public/images/certificates/halal-1.jpg",
+      "../public/images/certificates/halal-2.jpg",
+      "../public/images/certificates/halal-3.jpg",
+      "../public/images/certificates/halal-4.jpg",
+      "../public/images/certificates/halal-5.jpg",
     ],
   },
   {
     title: "Nomor Induk Berusaha",
     pages: [
-      "../src/assets/images/certificates/nib-1.jpg",
-      "../src/assets/images/certificates/nib-2.jpg",
+      "../public/images/certificates/nib-1.jpg",
+      "../public/images/certificates/nib-2.jpg",
     ],
   },
   {
     title: "Hak Merek",
     pages: [
-      "../src/assets/images/certificates/merek-1.jpg",
-      "../src/assets/images/certificates/merek-2.jpg",
+      "../public/images/certificates/merek-1.jpg",
+      "../public/images/certificates/merek-2.jpg",
     ],
   }
 ];

@@ -28,11 +28,13 @@ export default function ConsultationForm() {
       form.source === "Lainnya"
         ? form.sourceOther
         : form.source;
+    
+    const convertPhone = `'${form.phone}`;
 
     const formData = new FormData();
     formData.append("name", form.name);
     formData.append("city", form.city);
-    formData.append("phone", form.phone);
+    formData.append("phone", convertPhone);
     // formData.append("note", form.note);
     formData.append("source", finalSource);
 
@@ -69,13 +71,13 @@ Terima kasih, saya tunggu informasnya ya!`;
       <div className="bg-white rounded-3xl shadow-lg p-8 max-w-xl w-full">
         <Link
           to="/"
-          className="block mb-6 text-sm text-primary hover:underline"
+          className="block mb-6 text-sm text-[#C62828] hover:underline"
         >
           ← Kembali
         </Link>
 
         <img src={logo} alt="" className="w-24 h-24 mx-auto mb-4" />
-        <h1 className="text-3xl font-bold text-primary mb-6 text-center">
+        <h1 className="text-3xl font-bold text-[#C62828] mb-6 text-center">
           Form Konsultasi Franchise
         </h1>
 

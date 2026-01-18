@@ -133,41 +133,33 @@ export const faqs = [
   },
 ];
 
-
-import Certificate1 from '../src/assets/images/certificates/certificate-1.webp';
-import Certificate2 from '../src/assets/images/certificates/certificate-2.jpg';
-import Certificate3 from '../src/assets/images/certificates/certificate-3.png';
-import Certificate4 from '../src/assets/images/certificates/certificate-4.jpg';
-import Certificate5 from '../src/assets/images/certificates/certificate-5.png';
-
 export const certificates = [
   {
-    id: 1,
-    src: Certificate1,
-    alt: 'Sertifikat Halal'
+    title: "Sertifikat Halal",
+    pages: [
+      "../src/assets/images/certificates/halal-1.jpg",
+      "../src/assets/images/certificates/halal-2.jpg",
+      "../src/assets/images/certificates/halal-3.jpg",
+      "../src/assets/images/certificates/halal-4.jpg",
+      "../src/assets/images/certificates/halal-5.jpg",
+    ],
   },
   {
-    id: 2,
-    src: Certificate2,
-    alt: 'Brand Kuliner Terfavorit'
+    title: "Nomor Induk Berusaha",
+    pages: [
+      "../src/assets/images/certificates/nib-1.jpg",
+      "../src/assets/images/certificates/nib-2.jpg",
+    ],
   },
   {
-    id: 3,
-    src: Certificate3,
-    alt: 'Standar Operasional Nasional'
-  },
-  {
-    id: 4,
-    src: Certificate4,
-    alt: 'Penghargaan UMKM Unggulan'
-  },
-  {
-    id: 5,
-    src: Certificate5,
-    alt: 'Penghargaan UMKM Terbaik'
-  },
-
+    title: "Hak Merek",
+    pages: [
+      "../src/assets/images/certificates/merek-1.jpg",
+      "../src/assets/images/certificates/merek-2.jpg",
+    ],
+  }
 ];
+
 
 export const toastTestimonials = [
   {

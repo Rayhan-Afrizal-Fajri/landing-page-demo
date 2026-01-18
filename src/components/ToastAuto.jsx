@@ -19,7 +19,7 @@ export default function ToastAuto() {
             );
 
             index = (index + 1) % toastTestimonials.length;
-        }, 6000);
+        },15000);
 
         return () => clearInterval(interval);
     }, []);

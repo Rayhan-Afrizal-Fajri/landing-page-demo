@@ -1,4 +1,6 @@
 import { certificates } from '../data';
+import { useState } from 'react';
+import CertificateModal from './CertificateModal';
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
 import history1 from '../assets/images/history/history-1.jpeg';
 import history2 from '../assets/images/history/history-2.jpeg';
@@ -65,6 +67,8 @@ const aboutImages = [
 ]
 
 export default function Profile() {
+  const [selectedCert, setSelectedCert] = useState(null);
+
   return (
     <section id="profil" className="py-20">
       <div className="container mx-auto px-8 flex flex-col gap-14">
@@ -140,29 +144,47 @@ export default function Profile() {
         </section>
 
         {/* === SERTIFIKAT === */}
-        {/* <section>
+        <section>
           <h3 className="text-secondary text-3xl md:text-4xl font-bold text-center mb-12">
             Sertifikat & Pencapaian
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {certificates.map((c) => (
-              <div
-                key={c.alt}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm"
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {certificates.map((c, i) => (
+              <button
+                key={i}
+                onClick={() => setSelectedCert(c)}
+                className="bg-[#FBC02D] rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition relative"
               >
                 <img
-                  src={c.src}
-                  alt={c.alt}
+                  src={c.pages[0]}
+                  alt={c.title}
                   className="mx-auto h-40 object-contain mb-4"
                 />
+
+                {/* Badge halaman */}
+                {c.pages.length > 1 && (
+                  <span className="absolute top-4 right-4 text-xs bg-black/70 text-white px-2 py-1 rounded">
+                    {c.pages.length} halaman
+                  </span>
+                )}
+
                 <p className="text-sm font-medium text-gray-700">
-                  {c.alt}
+                  {c.title}
                 </p>
-              </div>
+              </button>
             ))}
           </div>
-        </section> */}
+
+          {/* MODAL */}
+          {selectedCert && (
+            <CertificateModal
+              cert={selectedCert}
+              onClose={() => setSelectedCert(null)}
+            />
+          )}
+        </section>
+
 
       </div>
     </section>

@@ -158,7 +158,7 @@ export default function Profile() {
               >
                 <img
                   src={c.pages[0]}
-                  alt={c.title}
+                  alt={c.pages[0]}
                   className="mx-auto h-72 object-contain mb-4"
                 />
 

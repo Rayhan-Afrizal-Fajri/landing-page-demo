@@ -154,7 +154,7 @@ export default function Profile() {
               <button
                 key={i}
                 onClick={() => setSelectedCert(c)}
-                className="bg-[#FBC02D] rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition relative"
+                className="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg border border-gray-200 transition relative"
               >
                 <img
                   src={c.pages[0]}

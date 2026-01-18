@@ -10,45 +10,81 @@ export default function CertificateModal({ cert, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
-      <div className="relative bg-[#FBC02D] max-w-3xl w-full rounded-2xl p-6">
+      <div className="relative bg-white max-w-4xl w-full rounded-2xl overflow-hidden shadow-2xl">
 
-        {/* Close */}
+        {/* CLOSE */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-[#C62828]"
+          className="absolute top-4 right-4 z-20 text-gray-600 hover:text-red-600"
         >
-          <X />
+          <X size={22} />
         </button>
 
-        {/* Image */}
-        <img
-          src={cert.pages[page]}
-          alt={cert.title}
-          className="mx-auto max-h-[70vh] object-contain"
-        />
+        {/* SLIDER WRAPPER */}
+        <div className="relative">
 
-        {/* Navigation */}
-        {total > 1 && (
-          <div className="flex items-center justify-between mt-6">
+          {/* SLIDES */}
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${page * 100}%)` }}
+          >
+            {cert.pages.map((src, i) => (
+              <div
+                key={i}
+                className="w-full flex-shrink-0 flex items-center justify-center p-6"
+              >
+                <img
+                  src={src}
+                  alt={`${cert.title} page ${i + 1}`}
+                  className="max-h-[75vh] object-contain rounded-lg shadow-lg"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* PREV */}
+          {total > 1 && (
             <button
               onClick={prev}
-              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition"
             >
-              <ChevronLeft />
+              <ChevronLeft size={20} />
             </button>
+          )}
 
-            <span className="text-sm text-white">
-              {page + 1} / {total}
-            </span>
-
+          {/* NEXT */}
+          {total > 1 && (
             <button
               onClick={next}
-              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition"
             >
-              <ChevronRight />
+              <ChevronRight size={20} />
             </button>
-          </div>
-        )}
+          )}
+
+          {/* PAGINATION */}
+          {total > 1 && (
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 px-4 py-2 rounded-full">
+              {cert.pages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setPage(i)}
+                  className={`w-2.5 h-2.5 rounded-full transition ${
+                    page === i ? "bg-white scale-125" : "bg-white/50"
+                  }`}
+                />
+              ))}
+              <span className="text-xs text-white ml-2">
+                {page + 1} / {total}
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* FOOTER INFO (optional tapi bikin hidup) */}
+        <div className="p-4 text-center border-t">
+          <h4 className="font-semibold text-gray-800">{cert.title}</h4>
+        </div>
       </div>
     </div>
   );

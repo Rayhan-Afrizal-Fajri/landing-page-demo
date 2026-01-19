@@ -125,7 +125,7 @@ Terima kasih, saya tunggu informasnya ya!`;
               }`}
             >
               <option value="" disabled>
-                Tahu info Franchise AGS darimana?
+                Tahu kemitraan AGS darimana?
               </option>
               <option value="Google">Google</option>
               <option value="Facebook">Facebook</option>

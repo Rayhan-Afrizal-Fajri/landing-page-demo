@@ -107,17 +107,17 @@ export default function Testimonial() {
           imageContain={true}
         >
           <div className="flex flex-col gap-4 items-start">
-            <h2 className="text-accent1 text-xl md:text-2xl lg:text-4xl font-bold text-left">
+            <h2 className="text-accent1 text-2xl md:text-3xl lg:text-5xl font-bold text-left">
               Mari Bermitra dengan <span className="text-secondary">Ayam Geprek Sederhana Mas Jampang</span>
             </h2>
-            <p className="text-accent1 text-lg font-semibold">
+            <p className="text-accent1 text-md sm:text-lg font-semibold">
               Keuntungan selama menjadi mitra Ayam Geprek Sederhana Mas Jampang:
             </p>
             <ul className="max-w-md space-y-1 text-body list-inside">
                 {benefits.map((benefit, i) => (
                     <li key={i} className="flex items-center">
                         <svg className="w-4 h-4 text-green-500 me-1.5 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-                        <p className="text-accent1 text-lg pb-0.5">{benefit.text}</p>
+                        <p className="text-accent1 text-sm sm:text-md pb-0.5">{benefit.text}</p>
                     </li>
                 ))}
             </ul>

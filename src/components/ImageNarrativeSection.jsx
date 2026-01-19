@@ -6,14 +6,21 @@ export default function ImageNarrativeSection({
   images,
   reverse = false,
   children,
+  h,
+  imageContain = false,
 }) {
   const [active, setActive] = useState(0);
+  const [direction, setDirection] = useState('next');
 
-  const next = () =>
+  const next = () => {
+    setDirection('next');
     setActive((prev) => (prev + 1) % images.length);
+  };
 
-  const prev = () =>
+  const prev = () => {
+    setDirection('prev');
     setActive((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   return (
     <section className="space-y-8">
@@ -31,11 +38,11 @@ export default function ImageNarrativeSection({
         {/* IMAGE AREA */}
         <div className="md:w-1/2 space-y-4">
           {/* MAIN IMAGE */}
-          <div className="relative h-[360px] rounded-2xl overflow-hidden">
+          <div className={`relative rounded-2xl overflow-hidden ${h ? `h-[${h}px]` : 'h-[360px] '}`}>
             <img
               src={images[active].src}
               alt={images[active].alt}
-              className="w-full h-full object-cover"
+              className={`w-full h-full ${imageContain ? 'object-contain' : 'object-cover'}`}
             />
 
             {/* ARROWS */}
@@ -68,7 +75,7 @@ export default function ImageNarrativeSection({
                 src={img.src}
                 alt={img.alt}
                 onClick={() => setActive(i)}
-                className={`h-20 w-28 object-cover rounded-lg cursor-pointer
+                className={`h-20 w-28 rounded-lg cursor-pointer ${imageContain ? 'object-contain' : 'object-cover'}
                   ${
                     active === i
                       ? 'ring-2 ring-primary'

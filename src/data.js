@@ -82,6 +82,7 @@ export const brands = [
     h: '24',
   },
 ]
+
 // testimonial data
 export const testimonials = [
   {

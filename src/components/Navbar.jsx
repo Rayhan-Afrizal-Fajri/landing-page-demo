@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "../components/ui/ThemeToggle";
-import logo from "../assets/logo-ayam-geprek-sederhana.webp";
+import logo from "/logo-ayam-geprek-sederhana.webp";
 
 const navLinks = [
   { label: "Beranda", href: "#beranda" },

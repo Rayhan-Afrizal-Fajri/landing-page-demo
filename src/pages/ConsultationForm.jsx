@@ -52,8 +52,8 @@ export default function ConsultationForm() {
 
     const message = `
 Halo Mas Bayu,
-Perkenalkan, saya *${form.name}* dari *${form.city}*.
-Saya tertarik untuk mengetahui lebih lanjut mengenai *peluang franchise Ayam Geprek Sederhana Mas Jampang*.
+
+Perkenalkan, saya *${form.name}* dari *${form.city}*. Saya tertarik untuk mengetahui lebih lanjut mengenai *peluang franchise Ayam Geprek Sederhana Mas Jampang*.
 
 Saya mengetahui Ayam Geprek Sederhana Mas Jampang dari *${finalSource}*
 ${textNote}

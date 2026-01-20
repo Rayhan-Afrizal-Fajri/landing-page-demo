@@ -131,7 +131,7 @@ export default function Profile() {
           <img
             src={owner}
             alt="Founder"
-            className="mx-auto w-40 h-40 rounded-full object-cover mb-6 bg-accent3"
+            className="mx-auto w-40 h-40 rounded-full object-cover mb-6 bg-[#FBC02D]"
           />
 
           <p className="text-accent1 leading-relaxed">

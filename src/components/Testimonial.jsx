@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { testimonials } from "../data";
 import { brands } from "../data";
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
-import cta1 from '../../public/images/testimonials/cta-1.png';
-import cta2 from '../../public/images/testimonials/cta-2.png';
-import cta3 from '../../public/images/testimonials/cta-3.png';
+import cta1 from '/images/testimonials/cta-1.png';
+import cta2 from '/images/testimonials/cta-2.png';
+import cta3 from '/images/testimonials/cta-3.png';
 
 const AUTO_DELAY = 6000;
 
@@ -80,14 +80,14 @@ export default function Testimonial() {
 
   return (
     <section id="testimoni" className="py-20 overflow-hidden">
-      <div className="container mx-auto px-8 flex flex-col gap-14">
-        <div>
+      <div className="container mx-auto px-8 flex flex-col gap-10">
+        <div className="">
           <p className="text-black text-center md:text-2xl font-bold mb-8">
             Brand kami dapat kamu temukan di
           </p>
 
             {/* Logo brand */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-16 mb-20 px-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-16 px-10">
               {brands.map((brand, i) => (
                 <div className="flex justify-center items-center -mt-10 md:mt-0">
                   <img
@@ -157,9 +157,7 @@ function Card({ data, active }) {
       ${active ? "shadow-xl" : ""}`}
     >
       <div className="flex items-center mb-6">
-        <div className="w-16 h-16 bg-[#C62828] rounded-full flex items-center justify-center text-white text-2xl font-bold">
-          {data.name.charAt(0)}
-        </div>
+        <img className="w-16 h-16 rounded-full" src={data.profile} alt="profil" />
 
         <div className="ml-4">
           <div className="font-bold text-lg">{data.name}</div>

@@ -23,7 +23,7 @@ export default function ImageNarrativeSection({
   };
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 ">
       {/* TITLE */}
       <h2 className={`text-secondary text-3xl md:text-4xl lg:text-6xl font-bold ${title === 'Sejarah Singkat' ? 'text-right' : ''} `}>
         {title}

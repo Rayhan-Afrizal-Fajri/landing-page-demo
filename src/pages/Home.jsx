@@ -17,6 +17,12 @@ export default function Home() {
 
   return (
     <>
+      <head>
+        <link rel="canonical" href="https://www.ayamgepreksederhana.com/" />
+        <title>Kemitraan Ayam Geprek Sederhana Mas Jampang | Franchise Modal Terjangkau, Untung Besar</title>
+        <meta name="description" content="Gabung jadi Mitra Franchise Ayam Geprek Sederhana Mas Jampang! Bisnis kuliner terbukti, sistem mudah, dukungan penuh. Raih keuntungan dengan modal terjangkau. Ajukan Kemitraan Sekarang!" />
+      </head>
+
       <div className="min-h-screen bg-primary flex flex-col">
         <ToastAuto />
         <Navbar themeState={themeState} />
@@ -25,10 +31,9 @@ export default function Home() {
         <Profile />
         <Partnership />
         <Testimonial />
+        <CTA />
         <FAQ />
         <Location />
-        {/* <Contact /> */}
-        <CTA />
         <Footer />
       </div>
     </>

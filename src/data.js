@@ -1,12 +1,15 @@
-import HeroImage1 from '../public/images/hero/hero-1.jpeg';
-import HeroImage2 from '../public/images/hero/hero-2.jpeg';
-import HeroImage3 from '../public/images/hero/hero-3.jpeg';
-import HeroImage4 from '../public/images/hero/hero-4.jpeg';
-import HeroImage5 from '../public/images/hero/hero-5.jpeg';
+import HeroImage1 from '/images/hero/hero-1.jpeg';
+import HeroImage2 from '/images/hero/hero-2.jpeg';
+import HeroImage3 from '/images/hero/hero-3.jpeg';
+import HeroImage4 from '/images/hero/hero-4.jpeg';
+import HeroImage5 from '/images/hero/hero-5.jpeg';
 
-import Testimonial1 from '../public/images/testimonials/testimonials-1.jpeg';
-import Testimonial2 from '../public/images/testimonials/testimonials-2.jpeg';
-import Testimonial3 from '../public/images/testimonials/testimonials-3.jpeg';
+import Testimonial1 from '/images/testimonials/testimonials-1.jpeg';
+import Testimonial2 from '/images/testimonials/testimonials-2.jpeg';
+import Testimonial3 from '/images/testimonials/testimonials-3.jpeg';
+import Ibnu from '/images/testimonials/ibnu.png';
+import Toni from '/images/testimonials/toni.png';
+import Tri from '/images/testimonials/tri.png';
 
 export const heroImages = [
     {
@@ -92,6 +95,7 @@ export const testimonials = [
     rating: 5,
     src: Testimonial1,
     alt: 'Testimonial Image 1',
+    profile: Toni,
   },
   {
     name: "Ibnu",
@@ -100,6 +104,7 @@ export const testimonials = [
     rating: 4,
     src: Testimonial3,
     alt: 'Hero Image 2',
+    profile: Ibnu,
   },
   {
     name: "Tri Setiaji",
@@ -108,6 +113,7 @@ export const testimonials = [
     rating: 4,
     src: Testimonial2,
     alt: 'Hero Image 3',
+    profile: Tri,
   },
 ];
 

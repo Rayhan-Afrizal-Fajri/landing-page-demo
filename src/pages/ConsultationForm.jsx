@@ -68,6 +68,11 @@ Terima kasih, saya tunggu informasnya ya!`;
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#C62828] px-6">
+      <head>
+        <link rel="canonical" href="https://www.ayamgepreksederhana.com/konsultasi" />
+        <title>Daftar Kemitraan - Ayam Geprek Sederhana Mas Jampang</title>
+        <meta name="description" content="Isi formulir pendaftaran kemitraan Ayam Geprek Sederhana Mas Jampang secara online. Proses cepat, tim kami akan menghubungi Anda untuk langkah selanjutnya." />
+      </head>
       <div className="bg-white rounded-3xl shadow-lg p-8 max-w-xl w-full">
         <Link
           to="/"

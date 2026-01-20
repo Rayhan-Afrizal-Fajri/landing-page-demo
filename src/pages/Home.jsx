@@ -19,8 +19,8 @@ export default function Home() {
     <>
       <head>
         <link rel="canonical" href="https://www.ayamgepreksederhana.com/" />
-        <title>Kemitraan Ayam Geprek Sederhana Mas Jampang | Franchise Modal Terjangkau, Untung Besar</title>
-        <meta name="description" content="Gabung jadi Mitra Franchise Ayam Geprek Sederhana Mas Jampang! Bisnis kuliner terbukti, sistem mudah, dukungan penuh. Raih keuntungan dengan modal terjangkau. Ajukan Kemitraan Sekarang!" />
+        <title>Ayam Geprek Sederhana Mas Jampang | Modal Terjangkau, Untung Besar</title>
+        <meta name="description" content="Gabung jadi Mitra Franchise Ayam Geprek Sederhana Mas Jampang! Bisnis kuliner terbukti, sistem mudah, dukungan penuh." />
       </head>
 
       <div className="min-h-screen bg-primary flex flex-col">

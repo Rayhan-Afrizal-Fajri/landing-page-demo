@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { testimonials } from "../data";
 import { brands } from "../data";
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
-import cta1 from '/images/testimonials/cta-1.png';
-import cta2 from '/images/testimonials/cta-2.png';
-import cta3 from '/images/testimonials/cta-3.png';
+import cta1 from '/images/testimonials/gerobak-sedang-ayam-geprek-sederhana.webp';
+import cta2 from '/images/testimonials/gerobak-kecil-ayam-geprek-sederhana.webp';
+import cta3 from '/images/testimonials/etalase-kecil-ayam-geprek-sederhana.webp';
 
 const AUTO_DELAY = 6000;
 

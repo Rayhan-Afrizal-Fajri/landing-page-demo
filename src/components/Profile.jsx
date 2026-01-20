@@ -2,18 +2,18 @@ import { certificates } from '../data';
 import { useState } from 'react';
 import CertificateModal from './CertificateModal';
 import ImageNarrativeSection from '../components/ImageNarrativeSection';
-import history1 from '/images/history/history-1.jpeg';
-import history2 from '/images/history/history-2.jpeg';
-import history3 from '/images/history/history-3.png';
-import history4 from '/images/history/history-4.jpeg';
-import history5 from '/images/history/history-5.jpeg';
-import history6 from '/images/history/history-6.jpeg';
-import about1 from '/images/about/about-1.jpeg';
-import about2 from '/images/about/about-2.jpeg';
-import about3 from '/images/about/about-3.jpeg';
-import about4 from '/images/about/about-4.jpeg';
-import about5 from '/images/about/about-5.jpeg';
-import owner from '/images/owner.png';
+import history1 from '/images/history/outlet-awal.webp';
+import history2 from '/images/history/grand-opening-ayam-geprek-sederhana.webp';
+import history3 from '/images/history/proses-membuat-ayam-geprek.webp';
+import history4 from '/images/history/aktivitas-karyawan.webp';
+import history5 from '/images/history/suasana-outlet.webp';
+import history6 from '/images/history/karyawan-ayam-geprek-sederhana.webp';
+import about1 from '/images/about/gerobak-ayam-geprek-sederhana.webp';
+import about2 from '/images/about/gerobak-ayam-geprek-sederhana-close-up.webp';
+import about3 from '/images/about/ayam-geprek-sederhana.webp';
+import about4 from '/images/about/ayam-geprek-sederhana-2.webp';
+import about5 from '/images/about/grand-opening-ayam-geprek-sederhana.webp';
+import owner from '/images/owner-ayam-geprek-sederhana.webp';
 
 
 const historyImages = [

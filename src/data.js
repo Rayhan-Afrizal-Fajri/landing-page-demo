@@ -1,15 +1,15 @@
-import HeroImage1 from '/images/hero/hero-1.jpeg';
-import HeroImage2 from '/images/hero/hero-2.jpeg';
-import HeroImage3 from '/images/hero/hero-3.jpeg';
-import HeroImage4 from '/images/hero/hero-4.jpeg';
-import HeroImage5 from '/images/hero/hero-5.jpeg';
+import HeroImage1 from '/images/hero/ayam-utuh.webp';
+import HeroImage2 from '/images/hero/ayam-crispy.webp';
+import HeroImage3 from '/images/hero/tahu-crispy.webp';
+import HeroImage4 from '/images/hero/ceker-krispy.webp';
+import HeroImage5 from '/images/hero/mie-goreng-ayam-geprek.webp';
 
-import Testimonial1 from '/images/testimonials/testimonials-1.jpeg';
-import Testimonial2 from '/images/testimonials/testimonials-2.jpeg';
-import Testimonial3 from '/images/testimonials/testimonials-3.jpeg';
-import Ibnu from '/images/testimonials/ibnu.png';
-import Toni from '/images/testimonials/toni.png';
-import Tri from '/images/testimonials/tri.png';
+import Testimonial1 from '/images/testimonials/gerobak-sedang-ags.webp';
+import Testimonial2 from '/images/testimonials/gerobak-ayam-geprek-sederhana.webp';
+import Testimonial3 from '/images/testimonials/gerobak-kecil-ags.webp';
+import Ibnu from '/images/testimonials/profil-ibnu.webp';
+import Toni from '/images/testimonials/profil-toni.webp';
+import Tri from '/images/testimonials/profil-tri-setiaji.webp';
 
 export const heroImages = [
     {
@@ -65,22 +65,22 @@ export const benefits = [
 
 export const brands = [
   {
-    src: '/images/brands/gofood.png',
+    src: '/images/brands/logo-gofood.webp',
     alt: 'GoFood Logo',
     h: '24',
   },
   {
-    src: '/images/brands/maxim.png',
+    src: '/images/brands/logo-maxim.webp',
     alt: 'Maxim Logo',
     h: '20',
   },
   {
-    src: '/images/brands/grabfood.png',
+    src: '/images/brands/logo-grabfood.webp',
     alt: 'GrabFood Logo',
     h: '22',
   },
   {
-    src: '/images/brands/shopeefood.png',
+    src: '/images/brands/logo-shopeefood.webp',
     alt: 'ShopeeFood Logo',
     h: '24',
   },
@@ -165,25 +165,25 @@ export const certificates = [
   {
     title: "Sertifikat Halal",
     pages: [
-      "/images/certificates/halal-1.jpg",
-      "/images/certificates/halal-2.jpg",
-      "/images/certificates/halal-3.jpg",
-      "/images/certificates/halal-4.jpg",
-      "/images/certificates/halal-5.jpg",
+      "/images/certificates/sertif-halal-page-1.webp",
+      "/images/certificates/sertif-halal-page-2.webp",
+      "/images/certificates/sertif-halal-page-3.webp",
+      "/images/certificates/sertif-halal-page-4.webp",
+      "/images/certificates/sertif-halal-page-5.webp",
     ],
   },
   {
     title: "Nomor Induk Berusaha",
     pages: [
-      "/images/certificates/nib-1.jpg",
-      "/images/certificates/nib-2.jpg",
+      "/images/certificates/sertif-nib-page-1.webp",
+      "/images/certificates/sertif-nib-page-2.webp",
     ],
   },
   {
     title: "Hak Merek",
     pages: [
-      "/images/certificates/merek-1.jpg",
-      "/images/certificates/merek-2.jpg",
+      "/images/certificates/sertif-merek-page-1.webp",
+      "/images/certificates/sertif-merek-page-2.webp",
     ],
   }
 ];

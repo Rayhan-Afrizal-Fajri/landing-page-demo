@@ -2,10 +2,12 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const proposalPages = [
-  "/pdf/page-1.jpg",
-  "/pdf/page-2.jpg",
-  "/pdf/page-3.jpg",
+  "/pdf/proposal-kemitraan-page-1.webp",
+  "/pdf/proposal-kemitraan-page-2.webp",
+  "/pdf/proposal-kemitraan-page-3.webp",
 ];
+
+const proposalDoc = "/pdf/proposal-kemitraan.pdf";
 
 export default function Partnership() {
   const [current, setCurrent] = useState(0);
@@ -31,7 +33,7 @@ export default function Partnership() {
 
           <div className="flex gap-4">
             <a
-              href="/pdf/partnership-proposal.pdf"
+              href={proposalDoc}
               download={true}
               target="_blank"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[#ECECEC] bg-accent3 rounded-lg hover:bg-primary-800"
@@ -40,7 +42,7 @@ export default function Partnership() {
             </a>
 
             <a
-              href="/pdf/partnership-proposal.pdf"
+              href={proposalDoc}
               target="_blank"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[#ECECEC] border border-[#ECECEC]/40 rounded-lg hover:bg-white/10"
             >

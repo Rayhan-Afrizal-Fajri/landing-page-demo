@@ -1,5 +1,5 @@
 import { AlarmClock, Phone, MapPin } from 'lucide-react';
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-ayam-geprek-sederhana.webp";
 
 export default function Footer() {
   const year = new Date().getFullYear();

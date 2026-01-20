@@ -82,7 +82,7 @@ export default function Testimonial() {
     <section id="testimoni" className="py-20 overflow-hidden">
       <div className="container mx-auto px-8 flex flex-col gap-10">
         <div className="">
-          <p className="text-black text-center md:text-2xl font-bold mb-8">
+          <p className="text-accent1 text-center md:text-2xl font-bold mb-8">
             Brand kami dapat kamu temukan di
           </p>
 
